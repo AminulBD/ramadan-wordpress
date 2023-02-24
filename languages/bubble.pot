@@ -9,14 +9,14 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-02-24T06:01:13+00:00\n"
+"POT-Creation-Date: 2023-02-24T08:14:55+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: ramadan\n"
 
 #. Plugin Name of the plugin
 #: includes/classes/class-admin.php:14
-#: includes/classes/class-blocks.php:225
+#: includes/classes/class-blocks.php:226
 #: build/index.js:1
 #: src/ramadan.js:58
 msgid "Ramadan"
@@ -80,312 +80,316 @@ msgstr ""
 msgid "- Select -"
 msgstr ""
 
-#: includes/classes/class-blocks.php:24
-#: includes/classes/class-blocks.php:33
+#: includes/classes/class-blocks.php:25
+#: includes/classes/class-blocks.php:34
 msgid "Chattogram"
 msgstr ""
 
-#: includes/classes/class-blocks.php:26
+#: includes/classes/class-blocks.php:27
 msgid "Comilla"
 msgstr ""
 
-#: includes/classes/class-blocks.php:27
+#: includes/classes/class-blocks.php:28
 msgid "Feni"
 msgstr ""
 
-#: includes/classes/class-blocks.php:28
+#: includes/classes/class-blocks.php:29
 msgid "Brahmanbaria"
 msgstr ""
 
-#: includes/classes/class-blocks.php:29
+#: includes/classes/class-blocks.php:30
 msgid "Rangamati"
 msgstr ""
 
-#: includes/classes/class-blocks.php:30
+#: includes/classes/class-blocks.php:31
 msgid "Noakhali"
 msgstr ""
 
-#: includes/classes/class-blocks.php:31
+#: includes/classes/class-blocks.php:32
 msgid "Chandpur"
 msgstr ""
 
-#: includes/classes/class-blocks.php:32
+#: includes/classes/class-blocks.php:33
 msgid "Lakshmipur"
 msgstr ""
 
-#: includes/classes/class-blocks.php:34
+#: includes/classes/class-blocks.php:35
 msgid "Coxsbazar"
 msgstr ""
 
-#: includes/classes/class-blocks.php:35
+#: includes/classes/class-blocks.php:36
 msgid "Khagrachhari"
 msgstr ""
 
-#: includes/classes/class-blocks.php:36
+#: includes/classes/class-blocks.php:37
 msgid "Bandarban"
 msgstr ""
 
-#: includes/classes/class-blocks.php:40
-#: includes/classes/class-blocks.php:45
+#: includes/classes/class-blocks.php:41
+#: includes/classes/class-blocks.php:46
 msgid "Rajshahi"
 msgstr ""
 
-#: includes/classes/class-blocks.php:42
+#: includes/classes/class-blocks.php:43
 msgid "Sirajganj"
 msgstr ""
 
-#: includes/classes/class-blocks.php:43
+#: includes/classes/class-blocks.php:44
 msgid "Pabna"
 msgstr ""
 
-#: includes/classes/class-blocks.php:44
+#: includes/classes/class-blocks.php:45
 msgid "Bogura"
 msgstr ""
 
-#: includes/classes/class-blocks.php:46
+#: includes/classes/class-blocks.php:47
 msgid "Natore"
 msgstr ""
 
-#: includes/classes/class-blocks.php:47
+#: includes/classes/class-blocks.php:48
 msgid "Joypurhat"
 msgstr ""
 
-#: includes/classes/class-blocks.php:48
+#: includes/classes/class-blocks.php:49
 msgid "Chapainawabganj"
 msgstr ""
 
-#: includes/classes/class-blocks.php:49
+#: includes/classes/class-blocks.php:50
 msgid "Naogaon"
 msgstr ""
 
-#: includes/classes/class-blocks.php:53
-#: includes/classes/class-blocks.php:62
+#: includes/classes/class-blocks.php:54
+#: includes/classes/class-blocks.php:63
 msgid "Khulna"
 msgstr ""
 
-#: includes/classes/class-blocks.php:55
+#: includes/classes/class-blocks.php:56
 msgid "Jashore"
 msgstr ""
 
-#: includes/classes/class-blocks.php:56
+#: includes/classes/class-blocks.php:57
 msgid "Satkhira"
 msgstr ""
 
-#: includes/classes/class-blocks.php:57
+#: includes/classes/class-blocks.php:58
 msgid "Meherpur"
 msgstr ""
 
-#: includes/classes/class-blocks.php:58
+#: includes/classes/class-blocks.php:59
 msgid "Narail"
 msgstr ""
 
-#: includes/classes/class-blocks.php:59
+#: includes/classes/class-blocks.php:60
 msgid "Chuadanga"
 msgstr ""
 
-#: includes/classes/class-blocks.php:60
+#: includes/classes/class-blocks.php:61
 msgid "Kushtia"
 msgstr ""
 
-#: includes/classes/class-blocks.php:61
+#: includes/classes/class-blocks.php:62
 msgid "Magura"
 msgstr ""
 
-#: includes/classes/class-blocks.php:63
+#: includes/classes/class-blocks.php:64
 msgid "Bagerhat"
 msgstr ""
 
-#: includes/classes/class-blocks.php:64
+#: includes/classes/class-blocks.php:65
 msgid "Jhenaidah"
 msgstr ""
 
-#: includes/classes/class-blocks.php:68
-#: includes/classes/class-blocks.php:73
+#: includes/classes/class-blocks.php:69
+#: includes/classes/class-blocks.php:74
 msgid "Barishal"
 msgstr ""
 
-#: includes/classes/class-blocks.php:70
+#: includes/classes/class-blocks.php:71
 msgid "Jhalakathi"
 msgstr ""
 
-#: includes/classes/class-blocks.php:71
+#: includes/classes/class-blocks.php:72
 msgid "Patuakhali"
 msgstr ""
 
-#: includes/classes/class-blocks.php:72
+#: includes/classes/class-blocks.php:73
 msgid "Pirojpur"
 msgstr ""
 
-#: includes/classes/class-blocks.php:74
+#: includes/classes/class-blocks.php:75
 msgid "Bhola"
 msgstr ""
 
-#: includes/classes/class-blocks.php:75
+#: includes/classes/class-blocks.php:76
 msgid "Barguna"
 msgstr ""
 
-#: includes/classes/class-blocks.php:79
-#: includes/classes/class-blocks.php:81
+#: includes/classes/class-blocks.php:80
+#: includes/classes/class-blocks.php:82
 msgid "Sylhet"
 msgstr ""
 
-#: includes/classes/class-blocks.php:82
+#: includes/classes/class-blocks.php:83
 msgid "Moulvibazar"
 msgstr ""
 
-#: includes/classes/class-blocks.php:83
+#: includes/classes/class-blocks.php:84
 msgid "Habiganj"
 msgstr ""
 
-#: includes/classes/class-blocks.php:84
+#: includes/classes/class-blocks.php:85
 msgid "Sunamganj"
 msgstr ""
 
-#: includes/classes/class-blocks.php:88
-#: includes/classes/class-blocks.php:97
+#: includes/classes/class-blocks.php:89
+#: includes/classes/class-blocks.php:98
 msgid "Dhaka"
 msgstr ""
 
-#: includes/classes/class-blocks.php:90
+#: includes/classes/class-blocks.php:91
 msgid "Narsingdi"
 msgstr ""
 
-#: includes/classes/class-blocks.php:91
+#: includes/classes/class-blocks.php:92
 msgid "Gazipur"
 msgstr ""
 
-#: includes/classes/class-blocks.php:92
+#: includes/classes/class-blocks.php:93
 msgid "Shariatpur"
 msgstr ""
 
-#: includes/classes/class-blocks.php:93
+#: includes/classes/class-blocks.php:94
 msgid "Narayanganj"
 msgstr ""
 
-#: includes/classes/class-blocks.php:94
+#: includes/classes/class-blocks.php:95
 msgid "Tangail"
 msgstr ""
 
-#: includes/classes/class-blocks.php:95
+#: includes/classes/class-blocks.php:96
 msgid "Kishoreganj"
 msgstr ""
 
-#: includes/classes/class-blocks.php:96
+#: includes/classes/class-blocks.php:97
 msgid "Manikganj"
 msgstr ""
 
-#: includes/classes/class-blocks.php:98
+#: includes/classes/class-blocks.php:99
 msgid "Munshiganj"
 msgstr ""
 
-#: includes/classes/class-blocks.php:99
+#: includes/classes/class-blocks.php:100
 msgid "Rajbari"
 msgstr ""
 
-#: includes/classes/class-blocks.php:100
+#: includes/classes/class-blocks.php:101
 msgid "Madaripur"
 msgstr ""
 
-#: includes/classes/class-blocks.php:101
+#: includes/classes/class-blocks.php:102
 msgid "Gopalganj"
 msgstr ""
 
-#: includes/classes/class-blocks.php:102
+#: includes/classes/class-blocks.php:103
 msgid "Faridpur"
 msgstr ""
 
-#: includes/classes/class-blocks.php:106
-#: includes/classes/class-blocks.php:114
+#: includes/classes/class-blocks.php:107
+#: includes/classes/class-blocks.php:115
 msgid "Rangpur"
 msgstr ""
 
-#: includes/classes/class-blocks.php:108
+#: includes/classes/class-blocks.php:109
 msgid "Panchagarh"
 msgstr ""
 
-#: includes/classes/class-blocks.php:109
+#: includes/classes/class-blocks.php:110
 msgid "Dinajpur"
 msgstr ""
 
-#: includes/classes/class-blocks.php:110
+#: includes/classes/class-blocks.php:111
 msgid "Lalmonirhat"
 msgstr ""
 
-#: includes/classes/class-blocks.php:111
+#: includes/classes/class-blocks.php:112
 msgid "Nilphamari"
 msgstr ""
 
-#: includes/classes/class-blocks.php:112
+#: includes/classes/class-blocks.php:113
 msgid "Gaibandha"
 msgstr ""
 
-#: includes/classes/class-blocks.php:113
+#: includes/classes/class-blocks.php:114
 msgid "Thakurgaon"
 msgstr ""
 
-#: includes/classes/class-blocks.php:115
+#: includes/classes/class-blocks.php:116
 msgid "Kurigram"
 msgstr ""
 
-#: includes/classes/class-blocks.php:119
-#: includes/classes/class-blocks.php:122
+#: includes/classes/class-blocks.php:120
+#: includes/classes/class-blocks.php:123
 msgid "Mymensingh"
 msgstr ""
 
-#: includes/classes/class-blocks.php:121
+#: includes/classes/class-blocks.php:122
 msgid "Sherpur"
 msgstr ""
 
-#: includes/classes/class-blocks.php:123
+#: includes/classes/class-blocks.php:124
 msgid "Jamalpur"
 msgstr ""
 
-#: includes/classes/class-blocks.php:124
+#: includes/classes/class-blocks.php:125
 msgid "Netrokona"
 msgstr ""
 
-#: includes/classes/class-blocks.php:149
+#: includes/classes/class-blocks.php:150
 #: build/index.js:1
 #: src/daily.js:18
 msgid "Date"
 msgstr ""
 
-#: includes/classes/class-blocks.php:150
-#: includes/classes/class-blocks.php:346
+#: includes/classes/class-blocks.php:151
+#: includes/classes/class-blocks.php:355
 msgid "Sahri"
 msgstr ""
 
-#: includes/classes/class-blocks.php:151
-#: includes/classes/class-blocks.php:350
+#: includes/classes/class-blocks.php:152
+#: includes/classes/class-blocks.php:359
 msgid "Fajr"
 msgstr ""
 
-#: includes/classes/class-blocks.php:152
-#: includes/classes/class-blocks.php:354
+#: includes/classes/class-blocks.php:153
+#: includes/classes/class-blocks.php:363
 msgid "Sunrise"
 msgstr ""
 
-#: includes/classes/class-blocks.php:153
-#: includes/classes/class-blocks.php:358
+#: includes/classes/class-blocks.php:154
+#: includes/classes/class-blocks.php:367
 msgid "Dhuhr"
 msgstr ""
 
-#: includes/classes/class-blocks.php:154
-#: includes/classes/class-blocks.php:362
+#: includes/classes/class-blocks.php:155
+#: includes/classes/class-blocks.php:371
 msgid "Asr"
 msgstr ""
 
-#: includes/classes/class-blocks.php:155
-#: includes/classes/class-blocks.php:366
+#: includes/classes/class-blocks.php:156
+#: includes/classes/class-blocks.php:375
 msgid "Maghrib"
 msgstr ""
 
-#: includes/classes/class-blocks.php:156
-#: includes/classes/class-blocks.php:370
+#: includes/classes/class-blocks.php:157
+#: includes/classes/class-blocks.php:379
 msgid "Isha"
 msgstr ""
 
-#: includes/classes/class-blocks.php:341
+#: includes/classes/class-blocks.php:318
+msgid "Select City"
+msgstr ""
+
+#: includes/classes/class-blocks.php:350
 msgid "Time"
 msgstr ""
 

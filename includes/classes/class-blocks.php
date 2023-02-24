@@ -162,7 +162,7 @@ class Blocks {
 		$headings = $this->get_headings();
 		$html     = '<thead><tr>';
 		foreach ( $headings as $heading ) {
-			$html .= '<th>' . $heading . '</th>';
+			$html .= '<th>' . esc_html($heading) . '</th>';
 		}
 		$html .= '</tr></thead>';
 
@@ -313,17 +313,20 @@ class Blocks {
 		$city   = get_query_var( 'ramadan_city' );
 		$city   = empty( $city ) ? 'dhaka' : $city;
 		$cities = $this->get_cities();
-		$html   = '<select class="ramadan-city-selector" onchange="document.location.href=this.value">';
 
+		$html = '<div ' . wp_kses_data( get_block_wrapper_attributes() ) . '>';
+		$html .= '<label for="ramadan-city-selector">' . esc_html__( 'Select City', 'ramadan' ) . '</label>';
+		$html .= '<select class="ramadan-city-selector" onchange="document.location.href=this.value">';
 		foreach ( $cities as $division ) {
-			$html .= '<optgroup label="' . $division['title'] . '">';
+			$html .= '<optgroup label="' . esc_attr( $division['title'] ) . '">';
 			foreach ( $division['cities'] as $name => $title ) {
-				$html .= '<option value="' . esc_url( $this->get_permalink( [ 'ramadan_city' => $name ] ) ) . '"' . ( $city === $name ? ' selected' : '' ) . '>' . $title . '</option>';
+				$html .= '<option value="' . esc_url( $this->get_permalink( [ 'ramadan_city' => $name ] ) ) . '"' . ( $city === $name ? ' selected' : '' ) . '>' . esc_html( $title ) . '</option>';
 			}
 			$html .= '</optgroup>';
 		}
 
 		$html .= '</select>';
+		$html .= '</div>';
 
 		return $html;
 	}
@@ -339,47 +342,49 @@ class Blocks {
 		$date      = empty( $date ) ? $current : $date;
 		$schedules = $this->calendar->today( $date );
 
-		$table = '<table class="prayer-times-table prayer-times-table-today">';
-		$table .= '<thead>';
-		$table .= '<tr>';
-		$table .= '<th>' . date_i18n( 'd F, l', strtotime( $date ) ) . '</th>';
-		$table .= '<th>' . esc_html__( 'Time', 'ramadan' ) . '</th>';
-		$table .= '</tr>';
-		$table .= '</thead>';
-		$table .= '<tbody>';
-		$table .= '<tr>';
-		$table .= '<td>' . esc_html__( 'Sahri', 'ramadan' ) . '</td>';
-		$table .= '<td>' . date_i18n( 'h:i A', strtotime( "$date {$schedules['sahri']}" ) ) . '</td>';
-		$table .= '</tr>';
-		$table .= '<tr>';
-		$table .= '<td>' . esc_html__( 'Fajr', 'ramadan' ) . '</td>';
-		$table .= '<td>' . date_i18n( 'h:i A', strtotime( "$date {$schedules['fajr']}" ) ) . '</td>';
-		$table .= '</tr>';
-		$table .= '<tr>';
-		$table .= '<td>' . esc_html__( 'Sunrise', 'ramadan' ) . '</td>';
-		$table .= '<td>' . date_i18n( 'h:i A', strtotime( "$date {$schedules['sunrise']}" ) ) . '</td>';
-		$table .= '</tr>';
-		$table .= '<tr>';
-		$table .= '<td>' . esc_html__( 'Dhuhr', 'ramadan' ) . '</td>';
-		$table .= '<td>' . date_i18n( 'h:i A', strtotime( "$date {$schedules['dhuhr']}" ) ) . '</td>';
-		$table .= '</tr>';
-		$table .= '<tr>';
-		$table .= '<td>' . esc_html__( 'Asr', 'ramadan' ) . '</td>';
-		$table .= '<td>' . date_i18n( 'h:i A', strtotime( "$date {$schedules['asr']}" ) ) . '</td>';
-		$table .= '</tr>';
-		$table .= '<tr>';
-		$table .= '<td>' . esc_html__( 'Maghrib', 'ramadan' ) . '</td>';
-		$table .= '<td>' . date_i18n( 'h:i A', strtotime( "$date {$schedules['maghrib']}" ) ) . '</td>';
-		$table .= '</tr>';
-		$table .= '<tr>';
-		$table .= '<td>' . esc_html__( 'Isha', 'ramadan' ) . '</td>';
-		$table .= '<td>' . date_i18n( 'h:i A', strtotime( "$date {$schedules['isha']}" ) ) . '</td>';
-		$table .= '</tr>';
-		$table .= '<tr>';
-		$table .= '</tbody>';
-		$table .= '</table>';
+		$html = '<div ' . wp_kses_data( get_block_wrapper_attributes() ) . '>';
+		$html .= '<table class="prayer-times-table prayer-times-table-today">';
+		$html .= '<thead>';
+		$html .= '<tr>';
+		$html .= '<th>' . date_i18n( 'd F, l', strtotime( $date ) ) . '</th>';
+		$html .= '<th>' . esc_html__( 'Time', 'ramadan' ) . '</th>';
+		$html .= '</tr>';
+		$html .= '</thead>';
+		$html .= '<tbody>';
+		$html .= '<tr>';
+		$html .= '<td>' . esc_html__( 'Sahri', 'ramadan' ) . '</td>';
+		$html .= '<td>' . date_i18n( 'h:i A', strtotime( "$date {$schedules['sahri']}" ) ) . '</td>';
+		$html .= '</tr>';
+		$html .= '<tr>';
+		$html .= '<td>' . esc_html__( 'Fajr', 'ramadan' ) . '</td>';
+		$html .= '<td>' . date_i18n( 'h:i A', strtotime( "$date {$schedules['fajr']}" ) ) . '</td>';
+		$html .= '</tr>';
+		$html .= '<tr>';
+		$html .= '<td>' . esc_html__( 'Sunrise', 'ramadan' ) . '</td>';
+		$html .= '<td>' . date_i18n( 'h:i A', strtotime( "$date {$schedules['sunrise']}" ) ) . '</td>';
+		$html .= '</tr>';
+		$html .= '<tr>';
+		$html .= '<td>' . esc_html__( 'Dhuhr', 'ramadan' ) . '</td>';
+		$html .= '<td>' . date_i18n( 'h:i A', strtotime( "$date {$schedules['dhuhr']}" ) ) . '</td>';
+		$html .= '</tr>';
+		$html .= '<tr>';
+		$html .= '<td>' . esc_html__( 'Asr', 'ramadan' ) . '</td>';
+		$html .= '<td>' . date_i18n( 'h:i A', strtotime( "$date {$schedules['asr']}" ) ) . '</td>';
+		$html .= '</tr>';
+		$html .= '<tr>';
+		$html .= '<td>' . esc_html__( 'Maghrib', 'ramadan' ) . '</td>';
+		$html .= '<td>' . date_i18n( 'h:i A', strtotime( "$date {$schedules['maghrib']}" ) ) . '</td>';
+		$html .= '</tr>';
+		$html .= '<tr>';
+		$html .= '<td>' . esc_html__( 'Isha', 'ramadan' ) . '</td>';
+		$html .= '<td>' . date_i18n( 'h:i A', strtotime( "$date {$schedules['isha']}" ) ) . '</td>';
+		$html .= '</tr>';
+		$html .= '<tr>';
+		$html .= '</tbody>';
+		$html .= '</table>';
+		$html .= '</div>';
 
-		return $table;
+		return $html;
 	}
 
 	public function render_monthly( $attributes ) {
@@ -395,14 +400,16 @@ class Blocks {
 		$monthFn   = strtolower( $month );
 		$schedules = $this->calendar->{$monthFn}();
 
-		$table = '<table class="prayer-times-table prayer-times-table-monthly">';
-		$table .= $this->render_headings();
-		$table .= '<tbody>';
-		$table .= $this->render_rows( $schedules, $year );
-		$table .= '</tbody>';
-		$table .= '</table>';
+		$html = '<div ' . wp_kses_data( get_block_wrapper_attributes() ) . '>';
+		$html .= '<table class="prayer-times-table prayer-times-table-monthly">';
+		$html .= $this->render_headings();
+		$html .= '<tbody>';
+		$html .= $this->render_rows( $schedules, $year );
+		$html .= '</tbody>';
+		$html .= '</table>';
+		$html .= '</div>';
 
-		return $table;
+		return $html;
 	}
 
 	public function render_month_links() {
@@ -410,21 +417,24 @@ class Blocks {
 		if ( empty( $month ) ) {
 			$month = 'january';
 		}
-		$links = '<ul class="prayer-times-month-links">';
+
+		$html = '<div ' . wp_kses_data( get_block_wrapper_attributes() ) . '>';
+		$html .= '<ul class="prayer-times-month-links">';
 
 		foreach ( $this->get_months() as $name => $label ) {
-			$links .= '<li class="' . ( $month === $name ? 'active' : 'inactive' ) . '">';
-			$links .= sprintf(
+			$html .= '<li class="' . ( $month === $name ? 'active' : 'inactive' ) . '">';
+			$html .= sprintf(
 				'<a href="%s">%s</a>',
 				esc_url( $this->get_permalink( [ 'ramadan_month' => $name ] ) ),
 				esc_html( $label )
 			);
-			$links .= '</li>';
+			$html .= '</li>';
 		}
 
-		$links .= '</ul>';
+		$html .= '</ul>';
+		$html .= '</div>';
 
-		return $links;
+		return $html;
 	}
 
 	public function render_ramadan( $attributes ) {
@@ -438,14 +448,16 @@ class Blocks {
 		$currentYear = ( new \DateTime( $date ) )->format( 'Y' );
 		$schedules   = $this->calendar->ramadan( $date );
 
-		$table = '<table class="prayer-times-table prayer-times-table-ramadan">';
-		$table .= $this->render_headings();
-		$table .= '<tbody>';
-		$table .= $this->render_rows( $schedules, $currentYear );
-		$table .= '</tbody>';
-		$table .= '</table>';
+		$html = '<div ' . wp_kses_data( get_block_wrapper_attributes() ) . '>';
+		$html .= '<table class="prayer-times-table prayer-times-table-ramadan">';
+		$html .= $this->render_headings();
+		$html .= '<tbody>';
+		$html .= $this->render_rows( $schedules, $currentYear );
+		$html .= '</tbody>';
+		$html .= '</table>';
+		$html .= '</div>';
 
-		return $table;
+		return $html;
 	}
 
 	public function render_yearly( $attributes ) {
@@ -456,20 +468,22 @@ class Blocks {
 		$year = isset( $attributes['year'] ) ? $attributes['year'] : '';
 		$year = empty( $year ) ? current_datetime()->format( 'Y' ) : $year;
 
-		$table = '<table class="prayer-times-table prayer-times-table-yearly">';
-		$table .= $this->render_headings();
-		$table .= '<tbody>';
+		$html = '<div ' . wp_kses_data( get_block_wrapper_attributes() ) . '>';
+		$html .= '<table class="prayer-times-table prayer-times-table-yearly">';
+		$html .= $this->render_headings();
+		$html .= '<tbody>';
 
 		foreach ( $this->get_months() as $month => $monthName ) {
-			$table .= '<tr>';
-			$table .= '<th colspan="8">' . $monthName . '</th>';
-			$table .= '</tr>';
-			$table .= $this->render_rows( $this->calendar->{$month}(), $year );
+			$html .= '<tr>';
+			$html .= '<th colspan="8">' . esc_html($monthName) . '</th>';
+			$html .= '</tr>';
+			$html .= $this->render_rows( $this->calendar->{$month}(), $year );
 		}
 
-		$table .= '</tbody>';
-		$table .= '</table>';
+		$html .= '</tbody>';
+		$html .= '</table>';
+		$html .= '</div>';
 
-		return $table;
+		return $html;
 	}
 }
