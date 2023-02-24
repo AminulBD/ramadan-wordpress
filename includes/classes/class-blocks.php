@@ -162,7 +162,7 @@ class Blocks {
 		$headings = $this->get_headings();
 		$html     = '<thead><tr>';
 		foreach ( $headings as $heading ) {
-			$html .= '<th>' . esc_html($heading) . '</th>';
+			$html .= '<th>' . esc_html( $heading ) . '</th>';
 		}
 		$html .= '</tr></thead>';
 
@@ -192,12 +192,17 @@ class Blocks {
 
 	private function get_permalink( $args = [] ) {
 		global $post;
-		$city    = isset( $args['ramadan_city'] ) ? $args['ramadan_city'] : get_query_var( 'ramadan_city' );
-		$ramadan = in_array( $post->ID, [ (int) get_option( 'ramadan_page_id' ), (int) get_option( 'ramadan_city_page_id' ) ] );
-		$type    = isset( $args['ramadan_type'] ) ? $args['ramadan_type'] : get_query_var( 'ramadan_type' );
-		$type    = $type ?: ( $ramadan ? 'ramadan' : 'namaz' );
-		$page    = get_option( $type === 'ramadan' ? 'ramadan_page_id' : 'ramadan_namaz_page_id' );
-		$base    = get_permalink( $page );
+
+		$ramadan_id      = (int) get_option( 'ramadan_page_id' );
+		$ramadan_city_id = (int) get_option( 'ramadan_city_page_id' );
+		$namaz_id        = (int) get_option( 'ramadan_namaz_page_id' );
+		$namaz_city_id   = (int) get_option( 'ramadan_namaz_city_page_id' );
+		$is_ramadan      = is_object( $post ) && in_array( $post->ID, [ $ramadan_id, $ramadan_city_id ] );
+
+		$city = isset( $args['ramadan_city'] ) ? $args['ramadan_city'] : get_query_var( 'ramadan_city' );
+		$type = isset( $args['ramadan_type'] ) ? $args['ramadan_type'] : get_query_var( 'ramadan_type' );
+		$type = $type ?: ( $is_ramadan ? 'ramadan' : 'namaz' );
+		$base = get_permalink( $type === 'ramadan' ? $ramadan_id : $namaz_id );
 
 		unset( $args['ramadan_type'] );
 
@@ -209,8 +214,7 @@ class Blocks {
 			return add_query_arg( $args, $base );
 		}
 
-		$page = get_option( $type === 'ramadan' ? 'ramadan_city_page_id' : 'ramadan_namaz_city_page_id' );
-		$base = get_permalink( $page );
+		$base = get_permalink( $type === 'ramadan' ? $ramadan_city_id : $namaz_city_id );
 
 		if ( ! empty( $city ) ) {
 			$args['ramadan_city'] = $city;
@@ -475,7 +479,7 @@ class Blocks {
 
 		foreach ( $this->get_months() as $month => $monthName ) {
 			$html .= '<tr>';
-			$html .= '<th colspan="8">' . esc_html($monthName) . '</th>';
+			$html .= '<th colspan="8">' . esc_html( $monthName ) . '</th>';
 			$html .= '</tr>';
 			$html .= $this->render_rows( $this->calendar->{$month}(), $year );
 		}
