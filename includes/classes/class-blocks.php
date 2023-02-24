@@ -201,7 +201,7 @@ class Blocks {
 
 		$city = isset( $args['ramadan_city'] ) ? $args['ramadan_city'] : get_query_var( 'ramadan_city' );
 		$type = isset( $args['ramadan_type'] ) ? $args['ramadan_type'] : get_query_var( 'ramadan_type' );
-		$type = $type ?: ( $is_ramadan ? 'ramadan' : 'namaz' );
+		$type = empty( $type ) ? ( $is_ramadan ? 'ramadan' : 'namaz' ) : $type;
 		$base = get_permalink( $type === 'ramadan' ? $ramadan_id : $namaz_id );
 
 		unset( $args['ramadan_type'] );
@@ -209,7 +209,7 @@ class Blocks {
 		if ( ! empty( get_option( 'permalink_structure' ) ) ) {
 			unset( $args['ramadan_city'] );
 
-			$base = $base . ( empty( $city ) ?: $city . '/' );
+			$base = $base . ( empty( $city ) ? null : $city . '/' );
 
 			return add_query_arg( $args, $base );
 		}
@@ -419,7 +419,7 @@ class Blocks {
 	public function render_month_links() {
 		$month = get_query_var( 'ramadan_month' );
 		if ( empty( $month ) ) {
-			$month = 'january';
+			$month = strtolower( current_datetime()->format( 'F' ) );
 		}
 
 		$html = '<div ' . wp_kses_data( get_block_wrapper_attributes() ) . '>';

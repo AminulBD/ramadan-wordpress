@@ -106,8 +106,8 @@ class Prayer_Calendar {
 	}
 
 	public function ramadan( $date = null ) {
-		$start = $date ?: $this->fist_ramadan;
-		$end   = date( 'Y-m-d', strtotime( '+30 days', strtotime( $start ?: '00:00' ) ) );
+		$start = empty( $date ) ? $this->fist_ramadan : $date;
+		$end   = date( 'Y-m-d', strtotime( '+30 days', strtotime( empty( $start ) ? '00:00' : $start ) ) );
 
 		return $this->get_range( $start, $end );
 	}
