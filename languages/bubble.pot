@@ -9,14 +9,14 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-02-24T08:14:55+00:00\n"
+"POT-Creation-Date: 2023-02-24T15:38:22+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: ramadan\n"
 
 #. Plugin Name of the plugin
 #: includes/classes/class-admin.php:14
-#: includes/classes/class-blocks.php:226
+#: includes/classes/class-blocks.php:230
 #: build/index.js:1
 #: src/ramadan.js:58
 msgid "Ramadan"
@@ -351,45 +351,45 @@ msgid "Date"
 msgstr ""
 
 #: includes/classes/class-blocks.php:151
-#: includes/classes/class-blocks.php:355
+#: includes/classes/class-blocks.php:359
 msgid "Sahri"
 msgstr ""
 
 #: includes/classes/class-blocks.php:152
-#: includes/classes/class-blocks.php:359
+#: includes/classes/class-blocks.php:363
 msgid "Fajr"
 msgstr ""
 
 #: includes/classes/class-blocks.php:153
-#: includes/classes/class-blocks.php:363
+#: includes/classes/class-blocks.php:367
 msgid "Sunrise"
 msgstr ""
 
 #: includes/classes/class-blocks.php:154
-#: includes/classes/class-blocks.php:367
+#: includes/classes/class-blocks.php:371
 msgid "Dhuhr"
 msgstr ""
 
 #: includes/classes/class-blocks.php:155
-#: includes/classes/class-blocks.php:371
+#: includes/classes/class-blocks.php:375
 msgid "Asr"
 msgstr ""
 
 #: includes/classes/class-blocks.php:156
-#: includes/classes/class-blocks.php:375
+#: includes/classes/class-blocks.php:379
 msgid "Maghrib"
 msgstr ""
 
 #: includes/classes/class-blocks.php:157
-#: includes/classes/class-blocks.php:379
+#: includes/classes/class-blocks.php:383
 msgid "Isha"
 msgstr ""
 
-#: includes/classes/class-blocks.php:318
+#: includes/classes/class-blocks.php:322
 msgid "Select City"
 msgstr ""
 
-#: includes/classes/class-blocks.php:350
+#: includes/classes/class-blocks.php:354
 msgid "Time"
 msgstr ""
 
