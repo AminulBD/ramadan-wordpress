@@ -1,0 +1,484 @@
+# Copyright (C) 2023 Aminul Islam
+# This file is distributed under the GPLv2.
+msgid ""
+msgstr ""
+"Project-Id-Version: Ramadan 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ramadan\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-02-24T06:01:13+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.1\n"
+"X-Domain: ramadan\n"
+
+#. Plugin Name of the plugin
+#: includes/classes/class-admin.php:14
+#: includes/classes/class-blocks.php:225
+#: build/index.js:1
+#: src/ramadan.js:58
+msgid "Ramadan"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://aminul.net/wordpress-plugins/ramadan"
+msgstr ""
+
+#. Description of the plugin
+msgid "Display Ramadan schedule."
+msgstr ""
+
+#. Author of the plugin
+msgid "Aminul Islam"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://aminul.net/"
+msgstr ""
+
+#: includes/classes/class-admin.php:13
+#: includes/classes/class-admin.php:24
+#: includes/classes/class-admin.php:42
+msgid "Ramadan Settings"
+msgstr ""
+
+#: includes/classes/class-admin.php:43
+msgid "Ramadan Start Date"
+msgstr ""
+
+#: includes/classes/class-admin.php:44
+msgid "Ramadan Page"
+msgstr ""
+
+#: includes/classes/class-admin.php:45
+msgid "Ramadan City Page"
+msgstr ""
+
+#: includes/classes/class-admin.php:46
+msgid "Namaz Page"
+msgstr ""
+
+#: includes/classes/class-admin.php:47
+msgid "Namaz City Page"
+msgstr ""
+
+#: includes/classes/class-admin.php:52
+msgid "Settings for Ramadan plugin."
+msgstr ""
+
+#: includes/classes/class-admin.php:59
+#: includes/classes/class-admin.php:78
+#: includes/classes/class-admin.php:91
+#: includes/classes/class-admin.php:104
+#: build/index.js:1
+#: src/daily.js:34
+#: src/monthly.js:65
+#: src/ramadan.js:33
+#: src/yearly.js:42
+msgid "- Select -"
+msgstr ""
+
+#: includes/classes/class-blocks.php:24
+#: includes/classes/class-blocks.php:33
+msgid "Chattogram"
+msgstr ""
+
+#: includes/classes/class-blocks.php:26
+msgid "Comilla"
+msgstr ""
+
+#: includes/classes/class-blocks.php:27
+msgid "Feni"
+msgstr ""
+
+#: includes/classes/class-blocks.php:28
+msgid "Brahmanbaria"
+msgstr ""
+
+#: includes/classes/class-blocks.php:29
+msgid "Rangamati"
+msgstr ""
+
+#: includes/classes/class-blocks.php:30
+msgid "Noakhali"
+msgstr ""
+
+#: includes/classes/class-blocks.php:31
+msgid "Chandpur"
+msgstr ""
+
+#: includes/classes/class-blocks.php:32
+msgid "Lakshmipur"
+msgstr ""
+
+#: includes/classes/class-blocks.php:34
+msgid "Coxsbazar"
+msgstr ""
+
+#: includes/classes/class-blocks.php:35
+msgid "Khagrachhari"
+msgstr ""
+
+#: includes/classes/class-blocks.php:36
+msgid "Bandarban"
+msgstr ""
+
+#: includes/classes/class-blocks.php:40
+#: includes/classes/class-blocks.php:45
+msgid "Rajshahi"
+msgstr ""
+
+#: includes/classes/class-blocks.php:42
+msgid "Sirajganj"
+msgstr ""
+
+#: includes/classes/class-blocks.php:43
+msgid "Pabna"
+msgstr ""
+
+#: includes/classes/class-blocks.php:44
+msgid "Bogura"
+msgstr ""
+
+#: includes/classes/class-blocks.php:46
+msgid "Natore"
+msgstr ""
+
+#: includes/classes/class-blocks.php:47
+msgid "Joypurhat"
+msgstr ""
+
+#: includes/classes/class-blocks.php:48
+msgid "Chapainawabganj"
+msgstr ""
+
+#: includes/classes/class-blocks.php:49
+msgid "Naogaon"
+msgstr ""
+
+#: includes/classes/class-blocks.php:53
+#: includes/classes/class-blocks.php:62
+msgid "Khulna"
+msgstr ""
+
+#: includes/classes/class-blocks.php:55
+msgid "Jashore"
+msgstr ""
+
+#: includes/classes/class-blocks.php:56
+msgid "Satkhira"
+msgstr ""
+
+#: includes/classes/class-blocks.php:57
+msgid "Meherpur"
+msgstr ""
+
+#: includes/classes/class-blocks.php:58
+msgid "Narail"
+msgstr ""
+
+#: includes/classes/class-blocks.php:59
+msgid "Chuadanga"
+msgstr ""
+
+#: includes/classes/class-blocks.php:60
+msgid "Kushtia"
+msgstr ""
+
+#: includes/classes/class-blocks.php:61
+msgid "Magura"
+msgstr ""
+
+#: includes/classes/class-blocks.php:63
+msgid "Bagerhat"
+msgstr ""
+
+#: includes/classes/class-blocks.php:64
+msgid "Jhenaidah"
+msgstr ""
+
+#: includes/classes/class-blocks.php:68
+#: includes/classes/class-blocks.php:73
+msgid "Barishal"
+msgstr ""
+
+#: includes/classes/class-blocks.php:70
+msgid "Jhalakathi"
+msgstr ""
+
+#: includes/classes/class-blocks.php:71
+msgid "Patuakhali"
+msgstr ""
+
+#: includes/classes/class-blocks.php:72
+msgid "Pirojpur"
+msgstr ""
+
+#: includes/classes/class-blocks.php:74
+msgid "Bhola"
+msgstr ""
+
+#: includes/classes/class-blocks.php:75
+msgid "Barguna"
+msgstr ""
+
+#: includes/classes/class-blocks.php:79
+#: includes/classes/class-blocks.php:81
+msgid "Sylhet"
+msgstr ""
+
+#: includes/classes/class-blocks.php:82
+msgid "Moulvibazar"
+msgstr ""
+
+#: includes/classes/class-blocks.php:83
+msgid "Habiganj"
+msgstr ""
+
+#: includes/classes/class-blocks.php:84
+msgid "Sunamganj"
+msgstr ""
+
+#: includes/classes/class-blocks.php:88
+#: includes/classes/class-blocks.php:97
+msgid "Dhaka"
+msgstr ""
+
+#: includes/classes/class-blocks.php:90
+msgid "Narsingdi"
+msgstr ""
+
+#: includes/classes/class-blocks.php:91
+msgid "Gazipur"
+msgstr ""
+
+#: includes/classes/class-blocks.php:92
+msgid "Shariatpur"
+msgstr ""
+
+#: includes/classes/class-blocks.php:93
+msgid "Narayanganj"
+msgstr ""
+
+#: includes/classes/class-blocks.php:94
+msgid "Tangail"
+msgstr ""
+
+#: includes/classes/class-blocks.php:95
+msgid "Kishoreganj"
+msgstr ""
+
+#: includes/classes/class-blocks.php:96
+msgid "Manikganj"
+msgstr ""
+
+#: includes/classes/class-blocks.php:98
+msgid "Munshiganj"
+msgstr ""
+
+#: includes/classes/class-blocks.php:99
+msgid "Rajbari"
+msgstr ""
+
+#: includes/classes/class-blocks.php:100
+msgid "Madaripur"
+msgstr ""
+
+#: includes/classes/class-blocks.php:101
+msgid "Gopalganj"
+msgstr ""
+
+#: includes/classes/class-blocks.php:102
+msgid "Faridpur"
+msgstr ""
+
+#: includes/classes/class-blocks.php:106
+#: includes/classes/class-blocks.php:114
+msgid "Rangpur"
+msgstr ""
+
+#: includes/classes/class-blocks.php:108
+msgid "Panchagarh"
+msgstr ""
+
+#: includes/classes/class-blocks.php:109
+msgid "Dinajpur"
+msgstr ""
+
+#: includes/classes/class-blocks.php:110
+msgid "Lalmonirhat"
+msgstr ""
+
+#: includes/classes/class-blocks.php:111
+msgid "Nilphamari"
+msgstr ""
+
+#: includes/classes/class-blocks.php:112
+msgid "Gaibandha"
+msgstr ""
+
+#: includes/classes/class-blocks.php:113
+msgid "Thakurgaon"
+msgstr ""
+
+#: includes/classes/class-blocks.php:115
+msgid "Kurigram"
+msgstr ""
+
+#: includes/classes/class-blocks.php:119
+#: includes/classes/class-blocks.php:122
+msgid "Mymensingh"
+msgstr ""
+
+#: includes/classes/class-blocks.php:121
+msgid "Sherpur"
+msgstr ""
+
+#: includes/classes/class-blocks.php:123
+msgid "Jamalpur"
+msgstr ""
+
+#: includes/classes/class-blocks.php:124
+msgid "Netrokona"
+msgstr ""
+
+#: includes/classes/class-blocks.php:149
+#: build/index.js:1
+#: src/daily.js:18
+msgid "Date"
+msgstr ""
+
+#: includes/classes/class-blocks.php:150
+#: includes/classes/class-blocks.php:346
+msgid "Sahri"
+msgstr ""
+
+#: includes/classes/class-blocks.php:151
+#: includes/classes/class-blocks.php:350
+msgid "Fajr"
+msgstr ""
+
+#: includes/classes/class-blocks.php:152
+#: includes/classes/class-blocks.php:354
+msgid "Sunrise"
+msgstr ""
+
+#: includes/classes/class-blocks.php:153
+#: includes/classes/class-blocks.php:358
+msgid "Dhuhr"
+msgstr ""
+
+#: includes/classes/class-blocks.php:154
+#: includes/classes/class-blocks.php:362
+msgid "Asr"
+msgstr ""
+
+#: includes/classes/class-blocks.php:155
+#: includes/classes/class-blocks.php:366
+msgid "Maghrib"
+msgstr ""
+
+#: includes/classes/class-blocks.php:156
+#: includes/classes/class-blocks.php:370
+msgid "Isha"
+msgstr ""
+
+#: includes/classes/class-blocks.php:341
+msgid "Time"
+msgstr ""
+
+#: build/index.js:1
+#: src/city-selector.js:20
+msgid "City Links"
+msgstr ""
+
+#: build/index.js:1
+#: src/city-selector.js:21
+msgid "Display all city selector."
+msgstr ""
+
+#: build/index.js:1
+#: src/daily.js:59
+msgid "Daily"
+msgstr ""
+
+#: build/index.js:1
+#: src/daily.js:60
+msgid "Display daily ramadan time."
+msgstr ""
+
+#: build/index.js:1
+#: src/daily.js:16
+#: src/monthly.js:32
+#: src/ramadan.js:15
+#: src/yearly.js:21
+msgid "Settings"
+msgstr ""
+
+#: build/index.js:1
+#: src/daily.js:27
+#: src/monthly.js:58
+#: src/ramadan.js:26
+#: src/yearly.js:35
+msgid "City"
+msgstr ""
+
+#: build/index.js:1
+#: src/monthly.js:90
+msgid "Monthly"
+msgstr ""
+
+#: build/index.js:1
+#: src/monthly.js:91
+msgid "Display monthly ramadan time."
+msgstr ""
+
+#: build/index.js:1
+#: src/monthly.js:34
+#: src/yearly.js:23
+msgid "Year"
+msgstr ""
+
+#: build/index.js:1
+#: src/monthly.js:37
+#: src/monthly.js:49
+#: src/yearly.js:26
+msgid "Current"
+msgstr ""
+
+#: build/index.js:1
+#: src/monthly.js:46
+msgid "Month"
+msgstr ""
+
+#: build/index.js:1
+#: src/month-links.js:20
+msgid "Month Links"
+msgstr ""
+
+#: build/index.js:1
+#: src/month-links.js:21
+msgid "Display all month links."
+msgstr ""
+
+#: build/index.js:1
+#: src/ramadan.js:59
+msgid "Display ramadan calendar."
+msgstr ""
+
+#: build/index.js:1
+#: src/ramadan.js:17
+msgid "Start Date"
+msgstr ""
+
+#: build/index.js:1
+#: src/yearly.js:67
+msgid "Yearly"
+msgstr ""
+
+#: build/index.js:1
+#: src/yearly.js:68
+msgid "Display yearly ramadan time."
+msgstr ""
