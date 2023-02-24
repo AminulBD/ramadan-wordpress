@@ -1,5 +1,7 @@
 import { registerBlockType } from '@wordpress/blocks';
 
+import './index.scss';
+
 import citySelector from './city-selector';
 import daily from './daily';
 import monthly from './monthly';

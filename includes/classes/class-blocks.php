@@ -9,7 +9,8 @@ class Blocks {
 		$this->calendar = new Prayer_Calendar();
 
 		add_action( 'init', [ $this, 'register_blocks' ] );
-		add_action( 'enqueue_block_editor_assets', [ $this, 'enqueue_assets' ] );
+		add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_assets' ] );
+		add_action( 'enqueue_block_editor_assets', [ $this, 'enqueue_editor_assets' ] );
 
 		if ( version_compare( $GLOBALS['wp_version'], '5.8', '<' ) ) {
 			add_filter( 'block_categories', [ $this, 'block_categories' ], 10, 2 );
@@ -300,6 +301,10 @@ class Blocks {
 	}
 
 	public function enqueue_assets() {
+		wp_enqueue_style( 'ramadan-blocks' );
+	}
+
+	public function enqueue_editor_assets() {
 		wp_enqueue_script( 'ramadan-blocks' );
 		wp_enqueue_style( 'ramadan-blocks' );
 	}
