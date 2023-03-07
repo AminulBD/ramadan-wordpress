@@ -2,7 +2,7 @@
 /**
  * Render month links as list.
  *
- * @package Ramadan
+ * @package ramadan
  */
 
 $month = get_query_var( 'ramadan_month' );

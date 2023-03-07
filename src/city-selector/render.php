@@ -2,7 +2,7 @@
 /**
  * Render city selector.
  *
- * @package Ramadan
+ * @package ramadan
  */
 
 $city   = get_query_var( 'ramadan_city' );

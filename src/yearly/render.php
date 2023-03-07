@@ -2,7 +2,7 @@
 /**
  * Render yearly prayer times table.
  *
- * @package Ramadan
+ * @package ramadan
  */
 
 $calendar = new \AminulBD\Ramadan\Prayer_Calendar();
