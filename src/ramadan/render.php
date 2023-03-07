@@ -18,7 +18,7 @@ $calendar   = new \AminulBD\Ramadan\Prayer_Calendar( $city );
 $schedules  = $calendar->ramadan( $date );
 $count      = 0;
 ?>
-<div <?php echo wp_kses_data( get_block_wrapper_attributes() ); ?>>
+<div <?php echo wp_kses_data( get_block_wrapper_attributes( [ 'class' => 'ramadan-block-container' ] ) ); ?>>
 	<table class="prayer-times-table prayer-times-table-ramadan">
 		<thead>
 		<tr>
@@ -33,7 +33,7 @@ $count      = 0;
 		<tbody>
 		<?php foreach ( array_chunk( $schedules, 10, true ) as $stage => $tendays ) : ?>
 			<tr class="group-caption">
-				<th colspan="9">
+				<td colspan="9">
 					<?php
 					switch ( $stage ) {
 						case 0:
@@ -47,7 +47,7 @@ $count      = 0;
 							break;
 					}
 					?>
-				</th>
+				</td>
 			</tr>
 			<?php foreach ( $tendays as $day => $schedule ) : ?>
 				<tr class="<?php echo esc_attr( $today === "$year-$day" ? 'today' : 'other-day' ) ?>">

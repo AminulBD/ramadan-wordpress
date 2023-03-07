@@ -1,0 +1,66 @@
+.ramadan-block-container .prayer-times-table {
+	border: 1px solid #ddd;
+	border-spacing: inherit;
+	background: #FFFFFF;
+}
+
+.ramadan-block-container .prayer-times-table td,
+.ramadan-block-container .prayer-times-table th {
+	line-height: 1.4em;
+	font-size: 1em;
+	text-align: center;
+	padding: 5px 10px;
+	border: 1px solid #ddd;
+}
+
+.ramadan-block-container .prayer-times-table > thead > tr > th {
+	border: 1px solid #ddd;
+	text-transform: none;
+	background-color: #f5f5f5;
+}
+
+.ramadan-block-container .prayer-times-table > tbody > tr:nth-child(even) > td,
+.ramadan-block-container .prayer-times-table > tbody > tr:hover > td {
+	background-color: #f5f5f5;
+}
+
+.ramadan-block-container .prayer-times-table > tbody > tr.today > td {
+	background-color: #266b28;
+	color: #ffffff;
+}
+
+.ramadan-block-container .prayer-times-table > tbody > tr.group-caption > td {
+	background: #4c82af;
+	color: #fff;
+}
+
+.ramadan-block-container .prayer-times-month-links {
+	margin-left: -5px;
+	margin-right: -5px;
+}
+
+.ramadan-block-container .prayer-times-month-links > li {
+	display: inline-block;
+	margin: 0;
+	padding: 5px;
+}
+
+.ramadan-block-container .prayer-times-month-links > li > a {
+	background-color: #fff;
+	color: inherit;
+	display: block;
+	text-decoration: none;
+	padding: 10px 5px;
+	line-height: 1;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 2px 4px -1px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	min-width: 56px;
+	transition: all 0.2s ease-in-out;
+}
+
+.ramadan-block-container .prayer-times-month-links > li > a:hover,
+.ramadan-block-container .prayer-times-month-links > li.active > a {
+	border-color: #2196f3;
+	box-shadow: 2px 2px 4px -1px #2196f3;
+}

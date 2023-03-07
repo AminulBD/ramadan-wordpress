@@ -3,9 +3,19 @@
 namespace AminulBD\Ramadan;
 
 class Blocks {
+	private static $instance = null;
+
 	public function __construct() {
 		add_action( 'init', [ $this, 'register_blocks' ] );
 		add_filter( 'block_categories_all', [ $this, 'block_categories' ], 10, 2 );
+	}
+
+	public static function init() {
+		if ( null === self::$instance ) {
+			self::$instance = new self();
+		}
+
+		return self::$instance;
 	}
 
 	public function register_blocks() {

@@ -16,7 +16,7 @@ $calendar   = new \AminulBD\Ramadan\Prayer_Calendar( $city );
 $schedule   = $calendar->today( $date );
 ?>
 
-<div <?php echo wp_kses_data( get_block_wrapper_attributes() ); ?>>
+<div <?php echo wp_kses_data( get_block_wrapper_attributes( [ 'class' => 'ramadan-block-container' ] ) ); ?>>
 	<table class="prayer-times-table prayer-times-table-today">
 		<thead>
 		<tr>

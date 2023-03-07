@@ -13,7 +13,8 @@ class Plugin {
 		add_action( 'template_include', [ $this, 'template_include' ] );
 		add_filter( 'query_vars', [ $this, 'query_vars_filters' ] );
 
-		new Blocks();
+		Assets::init();
+		Blocks::init();
 	}
 
 	public static function init() {

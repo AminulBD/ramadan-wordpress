@@ -10,7 +10,7 @@ $city   = empty( $city ) ? 'dhaka' : $city;
 $cities = \AminulBD\Ramadan\Helper::get_cities();
 ?>
 
-<div <?php echo wp_kses_data( get_block_wrapper_attributes() ); ?>>
+<div <?php echo wp_kses_data( get_block_wrapper_attributes( [ 'class' => 'ramadan-block-container' ] ) ); ?>>
 	<label for="ramadan-city-selector"><?php echo esc_html__( 'Select City', 'ramadan' ); ?></label>
 	<select class="ramadan-city-selector" onchange="document.location.href=this.value">
 		<?php foreach ( $cities as $division ) : ?>

@@ -18,7 +18,7 @@ $schedules  = $calendar->{strtolower( $month )}();
 $today      = current_datetime()->format( 'Y-m-d' );
 ?>
 
-<div <?php echo wp_kses_data( get_block_wrapper_attributes() ); ?>>
+<div <?php echo wp_kses_data( get_block_wrapper_attributes( [ 'class' => 'ramadan-block-container' ] ) ); ?>>
 	<table class="prayer-times-table prayer-times-table-monthly">
 		<thead>
 		<tr>

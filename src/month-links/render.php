@@ -11,7 +11,7 @@ if ( empty( $month ) ) {
 }
 ?>
 
-<div <?php echo wp_kses_data( get_block_wrapper_attributes() ); ?>>
+<div <?php echo wp_kses_data( get_block_wrapper_attributes( [ 'class' => 'ramadan-block-container' ] ) ); ?>>
 	<ul class="prayer-times-month-links">
 		<?php foreach ( \AminulBD\Ramadan\Helper::get_months() as $name => $label ) : ?>
 			<li class="<?php echo esc_attr( $month === $name ? 'active' : 'inactive' ); ?>">
