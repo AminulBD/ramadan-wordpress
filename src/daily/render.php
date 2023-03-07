@@ -13,11 +13,11 @@ $current    = current_datetime()->format( 'Y-m-d' );
 $date       = isset( $attributes['date'] ) ? $attributes['date'] : $current;
 $date       = empty( $date ) ? $current : $date;
 $calendar   = new \AminulBD\Ramadan\Prayer_Calendar( $city );
-$schedules  = $calendar->today( $date );
+$schedule  = $calendar->today( $date );
 ?>
 
 <div <?php echo wp_kses_data( get_block_wrapper_attributes() ); ?>>
-	<table class="prayer-times-table prayer-times-table-today">
+	<table class="prayer-times-table ramadan-times-table-today">
 		<thead>
 		<tr>
 			<th><?php echo esc_html__( 'Date', 'ramadan' ); ?></th>
@@ -30,10 +30,10 @@ $schedules  = $calendar->today( $date );
 		<tbody>
 		<tr>
 			<td><?php echo date_i18n( $dateformat, strtotime( $date ) ); ?></td>
-			<td><?php echo date_i18n( $timeformat, strtotime( "$date {$schedules['sahri']}" ) ); ?></td>
-			<td><?php echo date_i18n( $timeformat, strtotime( "$date {$schedules['maghrib']}" ) ); ?></td>
-			<td><?php echo date_i18n( $timeformat, strtotime( "$date {$schedules['sunrise']}" ) ); ?></td>
-			<td><?php echo date_i18n( $timeformat, strtotime( "$date {$schedules['maghrib']}" ) ); ?></td>
+			<td><?php echo date_i18n( $timeformat, strtotime( "$date {$schedule['sahri']}" ) ); ?></td>
+			<td><?php echo date_i18n( $timeformat, strtotime( "$date {$schedule['maghrib']}" ) ); ?></td>
+			<td><?php echo date_i18n( $timeformat, strtotime( "$date {$schedule['sunrise']}" ) ); ?></td>
+			<td><?php echo date_i18n( $timeformat, strtotime( "$date {$schedule['maghrib']}" ) ); ?></td>
 		</tr>
 		<tr>
 		</tbody>
