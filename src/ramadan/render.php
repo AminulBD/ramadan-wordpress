@@ -13,6 +13,7 @@ $calendar->set_district( $city );
 $date      = isset( $attributes['date'] ) ? $attributes['date'] : '';
 $date      = empty( $date ) ? get_option( 'ramadan_start_date' ) : $date;
 $year      = ( new \DateTime( $date ) )->format( 'Y' );
+$today     = current_datetime()->format( 'Y-m-d' );
 $schedules = $calendar->ramadan( $date );
 ?>
 <div <?php echo wp_kses_data( get_block_wrapper_attributes() ); ?>>
@@ -26,7 +27,7 @@ $schedules = $calendar->ramadan( $date );
 		</thead>
 		<tbody>
 		<?php foreach ( $schedules as $day => $schedule ) : ?>
-			<tr>
+			<tr class="<?php echo esc_attr( $today === "$year-$day" ? 'today' : 'other-day' ) ?>">
 				<td><?php echo date_i18n( 'd -- l', strtotime( "$year-$day" ) ); ?> </td>
 				<td><?php echo date_i18n( 'h:i A', strtotime( "$year-$day {$schedule['sahri']}" ) ); ?> </td>
 				<td><?php echo date_i18n( 'h:i A', strtotime( "$year-$day {$schedule['fajr']}" ) ); ?> </td>

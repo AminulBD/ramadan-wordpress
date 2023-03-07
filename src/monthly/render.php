@@ -17,6 +17,7 @@ $month = empty( $month ) ? current_datetime()->format( 'F' ) : $month;
 
 $monthFn   = strtolower( $month );
 $schedules = $calendar->{$monthFn}();
+$today     = current_datetime()->format( 'Y-m-d' );
 ?>
 
 <div <?php echo wp_kses_data( get_block_wrapper_attributes() ); ?>>
@@ -30,7 +31,7 @@ $schedules = $calendar->{$monthFn}();
 		</thead>
 		<tbody>
 		<?php foreach ( $schedules as $day => $schedule ) : ?>
-			<tr>
+			<tr class="<?php echo esc_attr( $today === "$year-$day" ? 'today' : 'other-day' ) ?>">
 				<td><?php echo date_i18n( 'd -- l', strtotime( "$year-$day" ) ); ?></td>
 				<td><?php echo date_i18n( 'h:i A', strtotime( "$year-$day {$schedule['sahri']}" ) ); ?></td>
 				<td><?php echo date_i18n( 'h:i A', strtotime( "$year-$day {$schedule['fajr']}" ) ); ?></td>
