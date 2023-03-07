@@ -28,7 +28,7 @@
 		"attributes": {
 			"year": "2023",
 			"city": "Dhaka",
-			"dateformat": "d -- l",
+			"dateformat": "d F, l",
 			"timeformat": "h:i A"
 		}
 	},

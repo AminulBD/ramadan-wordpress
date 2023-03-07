@@ -41,7 +41,7 @@ function Edit( { attributes, setAttributes } ) {
 
 					<TextControl
 						label={ __( 'Date Format', 'ramadan' ) }
-						value={ attributes.dateformat ?? 'd -- l' }
+						value={ attributes.dateformat ?? 'd F, l' }
 						type="text"
 						onChange={ ( value ) =>
 							setAttributes( { dateformat: value } )

@@ -30,7 +30,7 @@
 		"attributes": {
 			"date": "2022-01-01",
 			"city": "Dhaka",
-			"dateformat": "d -- l",
+			"dateformat": "d F, l",
 			"timeformat": "h:i A"
 		}
 	},

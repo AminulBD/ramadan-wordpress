@@ -7,7 +7,7 @@
 
 $city       = isset( $attributes['city'] ) ? $attributes['city'] : '';
 $city       = empty( $city ) ? get_query_var( 'ramadan_city' ) : $city;
-$dateformat = empty( $attributes['dateformat'] ) ? 'd -- l' : $attributes['dateformat'];
+$dateformat = empty( $attributes['dateformat'] ) ? 'd F, l' : $attributes['dateformat'];
 $timeformat = empty( $attributes['timeformat'] ) ? 'h:i A' : $attributes['timeformat'];
 $date       = isset( $attributes['date'] ) ? $attributes['date'] : '';
 $date       = empty( $date ) ? get_option( 'ramadan_start_date' ) : $date;

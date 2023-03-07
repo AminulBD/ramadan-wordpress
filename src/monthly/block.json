@@ -34,7 +34,7 @@
 			"year": "2022",
 			"month": "january",
 			"city": "Dhaka",
-			"dateformat": "d -- l",
+			"dateformat": "d F, l",
 			"timeformat": "h:i A"
 		}
 	},
