@@ -38,6 +38,24 @@ function Edit( { attributes, setAttributes } ) {
 							</optgroup>
 						) ) }
 					</SelectControl>
+
+					<TextControl
+						label={ __( 'Date Format', 'ramadan' ) }
+						value={ attributes.dateformat ?? 'd -- l' }
+						type="text"
+						onChange={ ( value ) =>
+							setAttributes( { dateformat: value } )
+						}
+					/>
+
+					<TextControl
+						label={ __( 'Time Format', 'ramadan' ) }
+						value={ attributes.timeformat ?? 'h:i A' }
+						type="text"
+						onChange={ ( value ) =>
+							setAttributes( { timeformat: value } )
+						}
+					/>
 				</PanelBody>
 			</InspectorControls>
 

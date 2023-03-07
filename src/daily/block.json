@@ -19,12 +19,20 @@
 		},
 		"city": {
 			"type": "string"
+		},
+		"dateformat": {
+			"type": "string"
+		},
+		"timeformat": {
+			"type": "string"
 		}
 	},
 	"example": {
 		"attributes": {
 			"date": "2023-01-01",
-			"city": "Dhaka"
+			"city": "Dhaka",
+			"dateformat": "d F, l",
+			"timeformat": "h:i A"
 		}
 	},
 	"editorScript": "file:./index.js",

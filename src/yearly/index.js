@@ -1,7 +1,7 @@
 import { registerBlockType } from '@wordpress/blocks';
 import ServerSideRender from '@wordpress/server-side-render';
 import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
-import { PanelBody, SelectControl } from '@wordpress/components';
+import { PanelBody, SelectControl, TextControl } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 import { bangladesh as BDCities } from '../utils/cities';
 import metadata from './block.json';
@@ -45,6 +45,24 @@ function Edit( { attributes, setAttributes } ) {
 							</optgroup>
 						) ) }
 					</SelectControl>
+
+					<TextControl
+						label={ __( 'Date Format', 'ramadan' ) }
+						value={ attributes.dateformat ?? 'd -- l' }
+						type="text"
+						onChange={ ( value ) =>
+							setAttributes( { dateformat: value } )
+						}
+					/>
+
+					<TextControl
+						label={ __( 'Time Format', 'ramadan' ) }
+						value={ attributes.timeformat ?? 'h:i A' }
+						type="text"
+						onChange={ ( value ) =>
+							setAttributes( { timeformat: value } )
+						}
+					/>
 				</PanelBody>
 			</InspectorControls>
 
