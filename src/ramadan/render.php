@@ -15,11 +15,13 @@ $year       = ( new \DateTime( $date ) )->format( 'Y' );
 $today      = current_datetime()->format( 'Y-m-d' );
 $calendar   = new \AminulBD\Ramadan\Prayer_Calendar( $city );
 $schedules  = $calendar->ramadan( $date );
+$count      = 0;
 ?>
 <div <?php echo wp_kses_data( get_block_wrapper_attributes() ); ?>>
 	<table class="prayer-times-table prayer-times-table-ramadan">
 		<thead>
 		<tr>
+			<th><?php echo esc_html( 'Ramadan' ); ?></th>
 			<?php foreach ( \AminulBD\Ramadan\Helper::get_headings() as $heading ) : ?>
 				<th><?php echo esc_html( $heading ); ?></th>
 			<?php endforeach; ?>
@@ -28,6 +30,8 @@ $schedules  = $calendar->ramadan( $date );
 		<tbody>
 		<?php foreach ( $schedules as $day => $schedule ) : ?>
 			<tr class="<?php echo esc_attr( $today === "$year-$day" ? 'today' : 'other-day' ) ?>">
+				<?php $count ++; ?>
+				<td><?php echo number_format_i18n( $count ); ?></td>
 				<td><?php echo date_i18n( $dateformat, strtotime( "$year-$day" ) ); ?> </td>
 				<td><?php echo date_i18n( $timeformat, strtotime( "$year-$day {$schedule['sahri']}" ) ); ?> </td>
 				<td><?php echo date_i18n( $timeformat, strtotime( "$year-$day {$schedule['fajr']}" ) ); ?> </td>
