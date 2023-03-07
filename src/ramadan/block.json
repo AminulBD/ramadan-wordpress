@@ -24,14 +24,18 @@
 		},
 		"timeformat": {
 			"type": "string"
+		},
+		"dayformat": {
+			"type": "string"
 		}
 	},
 	"example": {
 		"attributes": {
 			"date": "2022-01-01",
 			"city": "Dhaka",
-			"dateformat": "d F, l",
-			"timeformat": "h:i A"
+			"dateformat": "d M",
+			"timeformat": "h:i A",
+			"dayformat": "D"
 		}
 	},
 	"editorScript": "file:./index.js",

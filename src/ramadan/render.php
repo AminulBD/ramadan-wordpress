@@ -7,8 +7,9 @@
 
 $city       = isset( $attributes['city'] ) ? $attributes['city'] : '';
 $city       = empty( $city ) ? get_query_var( 'ramadan_city' ) : $city;
-$dateformat = empty( $attributes['dateformat'] ) ? 'd F, l' : $attributes['dateformat'];
+$dateformat = empty( $attributes['dateformat'] ) ? 'd M' : $attributes['dateformat'];
 $timeformat = empty( $attributes['timeformat'] ) ? 'h:i A' : $attributes['timeformat'];
+$dayformat  = empty( $attributes['dayformat'] ) ? 'D' : $attributes['dayformat'];
 $date       = isset( $attributes['date'] ) ? $attributes['date'] : '';
 $date       = empty( $date ) ? get_option( 'ramadan_start_date' ) : $date;
 $year       = ( new \DateTime( $date ) )->format( 'Y' );
@@ -22,13 +23,15 @@ $count      = 0;
 		<thead>
 		<tr>
 			<th><?php echo esc_html( 'Ramadan' ); ?></th>
-			<?php foreach ( \AminulBD\Ramadan\Helper::get_headings() as $heading ) : ?>
-				<th><?php echo esc_html( $heading ); ?></th>
-			<?php endforeach; ?>
+			<th><?php echo esc_html( 'Date' ); ?></th>
+			<th><?php echo esc_html( 'Day' ); ?></th>
+			<th><?php echo esc_html( 'Sahri' ); ?></th>
+			<th><?php echo esc_html( 'Fajr' ); ?></th>
+			<th><?php echo esc_html( 'Iftar' ); ?></th>
 		</tr>
 		</thead>
 		<tbody>
-		<?php foreach ( array_chunk( $schedules, 10 ) as $stage => $tendays ) : ?>
+		<?php foreach ( array_chunk( $schedules, 10, true ) as $stage => $tendays ) : ?>
 			<tr class="group-caption">
 				<th colspan="9">
 					<?php
@@ -50,14 +53,11 @@ $count      = 0;
 				<tr class="<?php echo esc_attr( $today === "$year-$day" ? 'today' : 'other-day' ) ?>">
 					<?php $count ++; ?>
 					<td><?php echo number_format_i18n( $count ); ?></td>
-					<td><?php echo date_i18n( $dateformat, strtotime( "$year-$day" ) ); ?> </td>
-					<td><?php echo date_i18n( $timeformat, strtotime( "$year-$day {$schedule['sahri']}" ) ); ?> </td>
-					<td><?php echo date_i18n( $timeformat, strtotime( "$year-$day {$schedule['fajr']}" ) ); ?> </td>
-					<td><?php echo date_i18n( $timeformat, strtotime( "$year-$day {$schedule['sunrise']}" ) ); ?> </td>
-					<td><?php echo date_i18n( $timeformat, strtotime( "$year-$day {$schedule['dhuhr']}" ) ); ?> </td>
-					<td><?php echo date_i18n( $timeformat, strtotime( "$year-$day {$schedule['asr']}" ) ); ?> </td>
-					<td><?php echo date_i18n( $timeformat, strtotime( "$year-$day {$schedule['maghrib']}" ) ); ?> </td>
-					<td><?php echo date_i18n( $timeformat, strtotime( "$year-$day {$schedule['isha']}" ) ); ?> </td>
+					<td><?php echo date_i18n( $dateformat, strtotime( "$year-$day" ) ); ?></td>
+					<td><?php echo date_i18n( $dayformat, strtotime( "$year-$day" ) ); ?></td>
+					<td><?php echo date_i18n( $timeformat, strtotime( "$year-$day {$schedule['sahri']}" ) ); ?></td>
+					<td><?php echo date_i18n( $timeformat, strtotime( "$year-$day {$schedule['fajr']}" ) ); ?></td>
+					<td><?php echo date_i18n( $timeformat, strtotime( "$year-$day {$schedule['maghrib']}" ) ); ?></td>
 				</tr>
 			<?php endforeach; ?>
 		<?php endforeach; ?>

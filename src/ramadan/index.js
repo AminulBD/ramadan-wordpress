@@ -41,7 +41,7 @@ function Edit( { attributes, setAttributes } ) {
 
 					<TextControl
 						label={ __( 'Date Format', 'ramadan' ) }
-						value={ attributes.dateformat ?? 'd F, l' }
+						value={ attributes.dateformat ?? 'd M' }
 						type="text"
 						onChange={ ( value ) =>
 							setAttributes( { dateformat: value } )
@@ -54,6 +54,15 @@ function Edit( { attributes, setAttributes } ) {
 						type="text"
 						onChange={ ( value ) =>
 							setAttributes( { timeformat: value } )
+						}
+					/>
+
+					<TextControl
+						label={ __( 'Day Format', 'ramadan' ) }
+						value={ attributes.dayformat ?? 'D' }
+						type="text"
+						onChange={ ( value ) =>
+							setAttributes( { dayformat: value } )
 						}
 					/>
 				</PanelBody>

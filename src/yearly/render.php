@@ -32,13 +32,13 @@ $calendar   = new \AminulBD\Ramadan\Prayer_Calendar( $city );
 			<?php foreach ( $calendar->{$month}() as $day => $schedule ) : ?>
 				<tr class="<?php echo esc_attr( $today === "$year-$day" ? 'today' : 'other-day' ) ?>">
 					<td><?php echo date_i18n( $dateformat, strtotime( "$year-$day" ) ); ?> </td>
-					<td><?php echo date_i18n( $timeformat, strtotime( "$year-$day {$schedule['sahri']}" ) ); ?> </td>
-					<td><?php echo date_i18n( $timeformat, strtotime( "$year-$day {$schedule['fajr']}" ) ); ?> </td>
-					<td><?php echo date_i18n( $timeformat, strtotime( "$year-$day {$schedule['sunrise']}" ) ); ?> </td>
-					<td><?php echo date_i18n( $timeformat, strtotime( "$year-$day {$schedule['dhuhr']}" ) ); ?> </td>
-					<td><?php echo date_i18n( $timeformat, strtotime( "$year-$day {$schedule['asr']}" ) ); ?> </td>
-					<td><?php echo date_i18n( $timeformat, strtotime( "$year-$day {$schedule['maghrib']}" ) ); ?> </td>
-					<td><?php echo date_i18n( $timeformat, strtotime( "$year-$day {$schedule['isha']}" ) ); ?> </td>
+					<td><?php echo date_i18n( $timeformat, strtotime( "$year-$day {$schedule['sahri']}" ) ); ?></td>
+					<td><?php echo date_i18n( $timeformat, strtotime( "$year-$day {$schedule['fajr']}" ) ); ?></td>
+					<td><?php echo date_i18n( $timeformat, strtotime( "$year-$day {$schedule['sunrise']}" ) ); ?></td>
+					<td><?php echo date_i18n( $timeformat, strtotime( "$year-$day {$schedule['dhuhr']}" ) ); ?></td>
+					<td><?php echo date_i18n( $timeformat, strtotime( "$year-$day {$schedule['asr']}" ) ); ?></td>
+					<td><?php echo date_i18n( $timeformat, strtotime( "$year-$day {$schedule['maghrib']}" ) ); ?></td>
+					<td><?php echo date_i18n( $timeformat, strtotime( "$year-$day {$schedule['isha']}" ) ); ?></td>
 				</tr>
 			<?php endforeach; ?>
 		<?php endforeach; ?>
