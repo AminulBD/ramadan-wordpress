@@ -2,14 +2,14 @@
 # This file is distributed under the GPLv2.
 msgid ""
 msgstr ""
-"Project-Id-Version: Ramadan 1.0.0\n"
+"Project-Id-Version: Ramadan 1.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ramadan\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-03-07T07:03:17+00:00\n"
+"POT-Creation-Date: 2023-03-07T07:34:23+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: ramadan\n"
@@ -37,54 +37,45 @@ msgid "https://aminul.net/"
 msgstr ""
 
 #: build/city-selector/render.php:14
-#: src/city-selector/render.php:14
 msgid "Select City"
 msgstr ""
 
 #: build/daily/render.php:24
-#: src/daily/render.php:24
 msgid "Time"
 msgstr ""
 
 #: build/daily/render.php:29
 #: includes/classes/class-helper.php:135
-#: src/daily/render.php:29
 msgid "Sahri"
 msgstr ""
 
 #: build/daily/render.php:33
 #: includes/classes/class-helper.php:136
-#: src/daily/render.php:33
 msgid "Fajr"
 msgstr ""
 
 #: build/daily/render.php:37
 #: includes/classes/class-helper.php:137
-#: src/daily/render.php:37
 msgid "Sunrise"
 msgstr ""
 
 #: build/daily/render.php:41
 #: includes/classes/class-helper.php:138
-#: src/daily/render.php:41
 msgid "Dhuhr"
 msgstr ""
 
 #: build/daily/render.php:45
 #: includes/classes/class-helper.php:139
-#: src/daily/render.php:45
 msgid "Asr"
 msgstr ""
 
 #: build/daily/render.php:49
 #: includes/classes/class-helper.php:140
-#: src/daily/render.php:49
 msgid "Maghrib"
 msgstr ""
 
 #: build/daily/render.php:53
 #: includes/classes/class-helper.php:141
-#: src/daily/render.php:53
 msgid "Isha"
 msgstr ""
 
@@ -126,10 +117,6 @@ msgstr ""
 #: build/monthly/index.js:254
 #: build/ramadan/index.js:227
 #: build/yearly/index.js:236
-#: src/daily/index.js:32
-#: src/monthly/index.js:60
-#: src/ramadan/index.js:32
-#: src/yearly/index.js:39
 #: build/daily/index.js:110
 #: build/monthly/index.js:138
 #: build/ramadan/index.js:110
@@ -403,7 +390,6 @@ msgstr ""
 
 #: includes/classes/class-helper.php:134
 #: build/daily/index.js:213
-#: src/daily/index.js:17
 #: build/daily/index.js:95
 msgid "Date"
 msgstr ""
@@ -412,10 +398,6 @@ msgstr ""
 #: build/monthly/index.js:225
 #: build/ramadan/index.js:211
 #: build/yearly/index.js:217
-#: src/daily/index.js:15
-#: src/monthly/index.js:28
-#: src/ramadan/index.js:15
-#: src/yearly/index.js:19
 #: build/daily/index.js:93
 #: build/monthly/index.js:106
 #: build/ramadan/index.js:93
@@ -427,10 +409,6 @@ msgstr ""
 #: build/monthly/index.js:247
 #: build/ramadan/index.js:220
 #: build/yearly/index.js:229
-#: src/daily/index.js:26
-#: src/monthly/index.js:54
-#: src/ramadan/index.js:26
-#: src/yearly/index.js:33
 #: build/daily/index.js:104
 #: build/monthly/index.js:132
 #: build/ramadan/index.js:104
@@ -440,8 +418,6 @@ msgstr ""
 
 #: build/monthly/index.js:227
 #: build/yearly/index.js:219
-#: src/monthly/index.js:30
-#: src/yearly/index.js:21
 #: build/monthly/index.js:108
 #: build/yearly/index.js:99
 msgid "Year"
@@ -450,9 +426,6 @@ msgstr ""
 #: build/monthly/index.js:230
 #: build/monthly/index.js:240
 #: build/yearly/index.js:222
-#: src/monthly/index.js:33
-#: src/monthly/index.js:45
-#: src/yearly/index.js:24
 #: build/monthly/index.js:111
 #: build/monthly/index.js:123
 #: build/yearly/index.js:102
@@ -460,25 +433,21 @@ msgid "Current"
 msgstr ""
 
 #: build/monthly/index.js:237
-#: src/monthly/index.js:42
 #: build/monthly/index.js:120
 msgid "Month"
 msgstr ""
 
 #: build/ramadan/index.js:213
-#: src/ramadan/index.js:17
 #: build/ramadan/index.js:95
 msgid "Start Date"
 msgstr ""
 
 #: build/city-selector/block.json
-#: src/city-selector/block.json
 msgctxt "block title"
 msgid "City Selector"
 msgstr ""
 
 #: build/city-selector/block.json
-#: src/city-selector/block.json
 msgctxt "block description"
 msgid "Display all city as dropdown."
 msgstr ""
@@ -489,114 +458,93 @@ msgstr ""
 #: build/monthly/block.json
 #: build/ramadan/block.json
 #: build/yearly/block.json
-#: src/city-selector/block.json
-#: src/daily/block.json
-#: src/month-links/block.json
-#: src/monthly/block.json
-#: src/ramadan/block.json
-#: src/yearly/block.json
 msgctxt "block keyword"
 msgid "ramadan"
 msgstr ""
 
 #: build/city-selector/block.json
-#: src/city-selector/block.json
 msgctxt "block keyword"
 msgid "cities"
 msgstr ""
 
 #: build/city-selector/block.json
-#: src/city-selector/block.json
 msgctxt "block keyword"
 msgid "city"
 msgstr ""
 
 #: build/daily/block.json
-#: src/daily/block.json
 msgctxt "block title"
 msgid "Daily Ramadan Time"
 msgstr ""
 
 #: build/daily/block.json
-#: src/daily/block.json
 msgctxt "block description"
 msgid "Display daily ramadan time."
 msgstr ""
 
 #: build/daily/block.json
-#: src/daily/block.json
 msgctxt "block keyword"
 msgid "daily"
 msgstr ""
 
 #: build/daily/block.json
-#: src/daily/block.json
 msgctxt "block keyword"
 msgid "time"
 msgstr ""
 
 #: build/month-links/block.json
-#: src/month-links/block.json
 msgctxt "block title"
 msgid "Month Links"
 msgstr ""
 
 #: build/month-links/block.json
-#: src/month-links/block.json
 msgctxt "block description"
 msgid "Display all month links."
 msgstr ""
 
 #: build/month-links/block.json
-#: src/month-links/block.json
 msgctxt "block keyword"
 msgid "month"
 msgstr ""
 
 #: build/month-links/block.json
-#: src/month-links/block.json
 msgctxt "block keyword"
 msgid "links"
 msgstr ""
 
 #: build/monthly/block.json
-#: build/ramadan/block.json
-#: src/monthly/block.json
-#: src/ramadan/block.json
 msgctxt "block title"
-msgid "Ramadan"
+msgid "Monthly Ramadan Time"
 msgstr ""
 
 #: build/monthly/block.json
-#: src/monthly/block.json
 msgctxt "block description"
 msgid "Display monthly ramadan time."
 msgstr ""
 
 #: build/monthly/block.json
 #: build/ramadan/block.json
-#: src/monthly/block.json
-#: src/ramadan/block.json
 msgctxt "block keyword"
 msgid "monthly"
 msgstr ""
 
 #: build/ramadan/block.json
+msgctxt "block title"
+msgid "Ramadan Time"
+msgstr ""
+
+#: build/ramadan/block.json
 #: build/yearly/block.json
-#: src/ramadan/block.json
-#: src/yearly/block.json
 msgctxt "block description"
 msgid "Display yearly ramadan time."
 msgstr ""
 
 #: build/yearly/block.json
-#: src/yearly/block.json
 msgctxt "block title"
-msgid "Yearly"
+msgid "Yearly Ramadan Time"
 msgstr ""
 
 #: build/yearly/block.json
-#: src/yearly/block.json
 msgctxt "block keyword"
 msgid "yearly"
 msgstr ""
