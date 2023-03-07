@@ -20,38 +20,20 @@ $schedules  = $calendar->today( $date );
 	<table class="prayer-times-table prayer-times-table-today">
 		<thead>
 		<tr>
-			<th><?php echo date_i18n( $dateformat, strtotime( $date ) ); ?></th>
-			<th><?php echo esc_html__( 'Time', 'ramadan' ); ?></th>
+			<th><?php echo esc_html__( 'Date', 'ramadan' ); ?></th>
+			<th><?php echo esc_html__( 'Sahri', 'ramadan' ); ?></th>
+			<th><?php echo esc_html__( 'Iftar', 'ramadan' ); ?></th>
+			<th><?php echo esc_html__( 'Sunrise', 'ramadan' ); ?></th>
+			<th><?php echo esc_html__( 'Sunset', 'ramadan' ); ?></th>
 		</tr>
 		</thead>
 		<tbody>
 		<tr>
-			<td><?php echo esc_html__( 'Sahri', 'ramadan' ); ?></td>
+			<td><?php echo date_i18n( $dateformat, strtotime( $date ) ); ?></td>
 			<td><?php echo date_i18n( $timeformat, strtotime( "$date {$schedules['sahri']}" ) ); ?></td>
-		</tr>
-		<tr>
-			<td><?php echo esc_html__( 'Fajr', 'ramadan' ); ?></td>
-			<td><?php echo date_i18n( $timeformat, strtotime( "$date {$schedules['fajr']}" ) ); ?></td>
-		</tr>
-		<tr>
-			<td><?php echo esc_html__( 'Sunrise', 'ramadan' ); ?></td>
-			<td><?php echo date_i18n( $timeformat, strtotime( "$date {$schedules['sunrise']}" ) ); ?></td>
-		</tr>
-		<tr>
-			<td><?php echo esc_html__( 'Dhuhr', 'ramadan' ); ?></td>
-			<td><?php echo date_i18n( $timeformat, strtotime( "$date {$schedules['dhuhr']}" ) ); ?></td>
-		</tr>
-		<tr>
-			<td><?php echo esc_html__( 'Asr', 'ramadan' ); ?></td>
-			<td><?php echo date_i18n( $timeformat, strtotime( "$date {$schedules['asr']}" ) ); ?></td>
-		</tr>
-		<tr>
-			<td><?php echo esc_html__( 'Maghrib', 'ramadan' ); ?></td>
 			<td><?php echo date_i18n( $timeformat, strtotime( "$date {$schedules['maghrib']}" ) ); ?></td>
-		</tr>
-		<tr>
-			<td><?php echo esc_html__( 'Isha', 'ramadan' ); ?></td>
-			<td><?php echo date_i18n( $timeformat, strtotime( "$date {$schedules['isha']}" ) ); ?></td>
+			<td><?php echo date_i18n( $timeformat, strtotime( "$date {$schedules['sunrise']}" ) ); ?></td>
+			<td><?php echo date_i18n( $timeformat, strtotime( "$date {$schedules['maghrib']}" ) ); ?></td>
 		</tr>
 		<tr>
 		</tbody>
