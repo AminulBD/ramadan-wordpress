@@ -1,0 +1,32 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ramadan/daily",
+	"title": "Daily Ramadan Time",
+	"category": "ramadan",
+	"icon": "megaphone",
+	"description": "Display daily ramadan time.",
+	"keywords": [
+		"ramadan",
+		"daily",
+		"time"
+	],
+	"version": "1.0.0",
+	"textdomain": "ramadan",
+	"attributes": {
+		"date": {
+			"type": "string"
+		},
+		"city": {
+			"type": "string"
+		}
+	},
+	"example": {
+		"attributes": {
+			"date": "2023-01-01",
+			"city": "Dhaka"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

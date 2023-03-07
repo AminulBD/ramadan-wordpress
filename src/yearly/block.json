@@ -1,0 +1,29 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ramadan/yearly",
+	"title": "Yearly Ramadan Time",
+	"category": "ramadan",
+	"icon": "megaphone",
+	"description": "Display yearly ramadan time.",
+	"keywords": [
+		"ramadan",
+		"yearly"
+	],
+	"attributes": {
+		"year": {
+			"type": "string"
+		},
+		"city": {
+			"type": "string"
+		}
+	},
+	"example": {
+		"attributes": {
+			"year": "2023",
+			"city": "Dhaka"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

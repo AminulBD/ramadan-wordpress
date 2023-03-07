@@ -9,16 +9,14 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-02-24T15:38:22+00:00\n"
+"POT-Creation-Date: 2023-03-07T07:03:17+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: ramadan\n"
 
 #. Plugin Name of the plugin
 #: includes/classes/class-admin.php:14
-#: includes/classes/class-blocks.php:230
-#: build/index.js:1
-#: src/ramadan.js:58
+#: includes/classes/class-blocks.php:27
 msgid "Ramadan"
 msgstr ""
 
@@ -36,6 +34,58 @@ msgstr ""
 
 #. Author URI of the plugin
 msgid "https://aminul.net/"
+msgstr ""
+
+#: build/city-selector/render.php:14
+#: src/city-selector/render.php:14
+msgid "Select City"
+msgstr ""
+
+#: build/daily/render.php:24
+#: src/daily/render.php:24
+msgid "Time"
+msgstr ""
+
+#: build/daily/render.php:29
+#: includes/classes/class-helper.php:135
+#: src/daily/render.php:29
+msgid "Sahri"
+msgstr ""
+
+#: build/daily/render.php:33
+#: includes/classes/class-helper.php:136
+#: src/daily/render.php:33
+msgid "Fajr"
+msgstr ""
+
+#: build/daily/render.php:37
+#: includes/classes/class-helper.php:137
+#: src/daily/render.php:37
+msgid "Sunrise"
+msgstr ""
+
+#: build/daily/render.php:41
+#: includes/classes/class-helper.php:138
+#: src/daily/render.php:41
+msgid "Dhuhr"
+msgstr ""
+
+#: build/daily/render.php:45
+#: includes/classes/class-helper.php:139
+#: src/daily/render.php:45
+msgid "Asr"
+msgstr ""
+
+#: build/daily/render.php:49
+#: includes/classes/class-helper.php:140
+#: src/daily/render.php:49
+msgid "Maghrib"
+msgstr ""
+
+#: build/daily/render.php:53
+#: includes/classes/class-helper.php:141
+#: src/daily/render.php:53
+msgid "Isha"
 msgstr ""
 
 #: includes/classes/class-admin.php:13
@@ -72,417 +122,481 @@ msgstr ""
 #: includes/classes/class-admin.php:78
 #: includes/classes/class-admin.php:91
 #: includes/classes/class-admin.php:104
-#: build/index.js:1
-#: src/daily.js:34
-#: src/monthly.js:65
-#: src/ramadan.js:33
-#: src/yearly.js:42
+#: build/daily/index.js:227
+#: build/monthly/index.js:254
+#: build/ramadan/index.js:227
+#: build/yearly/index.js:236
+#: src/daily/index.js:32
+#: src/monthly/index.js:60
+#: src/ramadan/index.js:32
+#: src/yearly/index.js:39
+#: build/daily/index.js:110
+#: build/monthly/index.js:138
+#: build/ramadan/index.js:110
+#: build/yearly/index.js:117
 msgid "- Select -"
 msgstr ""
 
-#: includes/classes/class-blocks.php:25
-#: includes/classes/class-blocks.php:34
+#: includes/classes/class-helper.php:9
+#: includes/classes/class-helper.php:18
 msgid "Chattogram"
 msgstr ""
 
-#: includes/classes/class-blocks.php:27
+#: includes/classes/class-helper.php:11
 msgid "Comilla"
 msgstr ""
 
-#: includes/classes/class-blocks.php:28
+#: includes/classes/class-helper.php:12
 msgid "Feni"
 msgstr ""
 
-#: includes/classes/class-blocks.php:29
+#: includes/classes/class-helper.php:13
 msgid "Brahmanbaria"
 msgstr ""
 
-#: includes/classes/class-blocks.php:30
+#: includes/classes/class-helper.php:14
 msgid "Rangamati"
 msgstr ""
 
-#: includes/classes/class-blocks.php:31
+#: includes/classes/class-helper.php:15
 msgid "Noakhali"
 msgstr ""
 
-#: includes/classes/class-blocks.php:32
+#: includes/classes/class-helper.php:16
 msgid "Chandpur"
 msgstr ""
 
-#: includes/classes/class-blocks.php:33
+#: includes/classes/class-helper.php:17
 msgid "Lakshmipur"
 msgstr ""
 
-#: includes/classes/class-blocks.php:35
+#: includes/classes/class-helper.php:19
 msgid "Coxsbazar"
 msgstr ""
 
-#: includes/classes/class-blocks.php:36
+#: includes/classes/class-helper.php:20
 msgid "Khagrachhari"
 msgstr ""
 
-#: includes/classes/class-blocks.php:37
+#: includes/classes/class-helper.php:21
 msgid "Bandarban"
 msgstr ""
 
-#: includes/classes/class-blocks.php:41
-#: includes/classes/class-blocks.php:46
+#: includes/classes/class-helper.php:25
+#: includes/classes/class-helper.php:30
 msgid "Rajshahi"
 msgstr ""
 
-#: includes/classes/class-blocks.php:43
+#: includes/classes/class-helper.php:27
 msgid "Sirajganj"
 msgstr ""
 
-#: includes/classes/class-blocks.php:44
+#: includes/classes/class-helper.php:28
 msgid "Pabna"
 msgstr ""
 
-#: includes/classes/class-blocks.php:45
+#: includes/classes/class-helper.php:29
 msgid "Bogura"
 msgstr ""
 
-#: includes/classes/class-blocks.php:47
+#: includes/classes/class-helper.php:31
 msgid "Natore"
 msgstr ""
 
-#: includes/classes/class-blocks.php:48
+#: includes/classes/class-helper.php:32
 msgid "Joypurhat"
 msgstr ""
 
-#: includes/classes/class-blocks.php:49
+#: includes/classes/class-helper.php:33
 msgid "Chapainawabganj"
 msgstr ""
 
-#: includes/classes/class-blocks.php:50
+#: includes/classes/class-helper.php:34
 msgid "Naogaon"
 msgstr ""
 
-#: includes/classes/class-blocks.php:54
-#: includes/classes/class-blocks.php:63
+#: includes/classes/class-helper.php:38
+#: includes/classes/class-helper.php:47
 msgid "Khulna"
 msgstr ""
 
-#: includes/classes/class-blocks.php:56
+#: includes/classes/class-helper.php:40
 msgid "Jashore"
 msgstr ""
 
-#: includes/classes/class-blocks.php:57
+#: includes/classes/class-helper.php:41
 msgid "Satkhira"
 msgstr ""
 
-#: includes/classes/class-blocks.php:58
+#: includes/classes/class-helper.php:42
 msgid "Meherpur"
 msgstr ""
 
-#: includes/classes/class-blocks.php:59
+#: includes/classes/class-helper.php:43
 msgid "Narail"
 msgstr ""
 
-#: includes/classes/class-blocks.php:60
+#: includes/classes/class-helper.php:44
 msgid "Chuadanga"
 msgstr ""
 
-#: includes/classes/class-blocks.php:61
+#: includes/classes/class-helper.php:45
 msgid "Kushtia"
 msgstr ""
 
-#: includes/classes/class-blocks.php:62
+#: includes/classes/class-helper.php:46
 msgid "Magura"
 msgstr ""
 
-#: includes/classes/class-blocks.php:64
+#: includes/classes/class-helper.php:48
 msgid "Bagerhat"
 msgstr ""
 
-#: includes/classes/class-blocks.php:65
+#: includes/classes/class-helper.php:49
 msgid "Jhenaidah"
 msgstr ""
 
-#: includes/classes/class-blocks.php:69
-#: includes/classes/class-blocks.php:74
+#: includes/classes/class-helper.php:53
+#: includes/classes/class-helper.php:58
 msgid "Barishal"
 msgstr ""
 
-#: includes/classes/class-blocks.php:71
+#: includes/classes/class-helper.php:55
 msgid "Jhalakathi"
 msgstr ""
 
-#: includes/classes/class-blocks.php:72
+#: includes/classes/class-helper.php:56
 msgid "Patuakhali"
 msgstr ""
 
-#: includes/classes/class-blocks.php:73
+#: includes/classes/class-helper.php:57
 msgid "Pirojpur"
 msgstr ""
 
-#: includes/classes/class-blocks.php:75
+#: includes/classes/class-helper.php:59
 msgid "Bhola"
 msgstr ""
 
-#: includes/classes/class-blocks.php:76
+#: includes/classes/class-helper.php:60
 msgid "Barguna"
 msgstr ""
 
-#: includes/classes/class-blocks.php:80
-#: includes/classes/class-blocks.php:82
+#: includes/classes/class-helper.php:64
+#: includes/classes/class-helper.php:66
 msgid "Sylhet"
 msgstr ""
 
-#: includes/classes/class-blocks.php:83
+#: includes/classes/class-helper.php:67
 msgid "Moulvibazar"
 msgstr ""
 
-#: includes/classes/class-blocks.php:84
+#: includes/classes/class-helper.php:68
 msgid "Habiganj"
 msgstr ""
 
-#: includes/classes/class-blocks.php:85
+#: includes/classes/class-helper.php:69
 msgid "Sunamganj"
 msgstr ""
 
-#: includes/classes/class-blocks.php:89
-#: includes/classes/class-blocks.php:98
+#: includes/classes/class-helper.php:73
+#: includes/classes/class-helper.php:82
 msgid "Dhaka"
 msgstr ""
 
-#: includes/classes/class-blocks.php:91
+#: includes/classes/class-helper.php:75
 msgid "Narsingdi"
 msgstr ""
 
-#: includes/classes/class-blocks.php:92
+#: includes/classes/class-helper.php:76
 msgid "Gazipur"
 msgstr ""
 
-#: includes/classes/class-blocks.php:93
+#: includes/classes/class-helper.php:77
 msgid "Shariatpur"
 msgstr ""
 
-#: includes/classes/class-blocks.php:94
+#: includes/classes/class-helper.php:78
 msgid "Narayanganj"
 msgstr ""
 
-#: includes/classes/class-blocks.php:95
+#: includes/classes/class-helper.php:79
 msgid "Tangail"
 msgstr ""
 
-#: includes/classes/class-blocks.php:96
+#: includes/classes/class-helper.php:80
 msgid "Kishoreganj"
 msgstr ""
 
-#: includes/classes/class-blocks.php:97
+#: includes/classes/class-helper.php:81
 msgid "Manikganj"
 msgstr ""
 
-#: includes/classes/class-blocks.php:99
+#: includes/classes/class-helper.php:83
 msgid "Munshiganj"
 msgstr ""
 
-#: includes/classes/class-blocks.php:100
+#: includes/classes/class-helper.php:84
 msgid "Rajbari"
 msgstr ""
 
-#: includes/classes/class-blocks.php:101
+#: includes/classes/class-helper.php:85
 msgid "Madaripur"
 msgstr ""
 
-#: includes/classes/class-blocks.php:102
+#: includes/classes/class-helper.php:86
 msgid "Gopalganj"
 msgstr ""
 
-#: includes/classes/class-blocks.php:103
+#: includes/classes/class-helper.php:87
 msgid "Faridpur"
 msgstr ""
 
-#: includes/classes/class-blocks.php:107
-#: includes/classes/class-blocks.php:115
+#: includes/classes/class-helper.php:91
+#: includes/classes/class-helper.php:99
 msgid "Rangpur"
 msgstr ""
 
-#: includes/classes/class-blocks.php:109
+#: includes/classes/class-helper.php:93
 msgid "Panchagarh"
 msgstr ""
 
-#: includes/classes/class-blocks.php:110
+#: includes/classes/class-helper.php:94
 msgid "Dinajpur"
 msgstr ""
 
-#: includes/classes/class-blocks.php:111
+#: includes/classes/class-helper.php:95
 msgid "Lalmonirhat"
 msgstr ""
 
-#: includes/classes/class-blocks.php:112
+#: includes/classes/class-helper.php:96
 msgid "Nilphamari"
 msgstr ""
 
-#: includes/classes/class-blocks.php:113
+#: includes/classes/class-helper.php:97
 msgid "Gaibandha"
 msgstr ""
 
-#: includes/classes/class-blocks.php:114
+#: includes/classes/class-helper.php:98
 msgid "Thakurgaon"
 msgstr ""
 
-#: includes/classes/class-blocks.php:116
+#: includes/classes/class-helper.php:100
 msgid "Kurigram"
 msgstr ""
 
-#: includes/classes/class-blocks.php:120
-#: includes/classes/class-blocks.php:123
+#: includes/classes/class-helper.php:104
+#: includes/classes/class-helper.php:107
 msgid "Mymensingh"
 msgstr ""
 
-#: includes/classes/class-blocks.php:122
+#: includes/classes/class-helper.php:106
 msgid "Sherpur"
 msgstr ""
 
-#: includes/classes/class-blocks.php:124
+#: includes/classes/class-helper.php:108
 msgid "Jamalpur"
 msgstr ""
 
-#: includes/classes/class-blocks.php:125
+#: includes/classes/class-helper.php:109
 msgid "Netrokona"
 msgstr ""
 
-#: includes/classes/class-blocks.php:150
-#: build/index.js:1
-#: src/daily.js:18
+#: includes/classes/class-helper.php:134
+#: build/daily/index.js:213
+#: src/daily/index.js:17
+#: build/daily/index.js:95
 msgid "Date"
 msgstr ""
 
-#: includes/classes/class-blocks.php:151
-#: includes/classes/class-blocks.php:359
-msgid "Sahri"
-msgstr ""
-
-#: includes/classes/class-blocks.php:152
-#: includes/classes/class-blocks.php:363
-msgid "Fajr"
-msgstr ""
-
-#: includes/classes/class-blocks.php:153
-#: includes/classes/class-blocks.php:367
-msgid "Sunrise"
-msgstr ""
-
-#: includes/classes/class-blocks.php:154
-#: includes/classes/class-blocks.php:371
-msgid "Dhuhr"
-msgstr ""
-
-#: includes/classes/class-blocks.php:155
-#: includes/classes/class-blocks.php:375
-msgid "Asr"
-msgstr ""
-
-#: includes/classes/class-blocks.php:156
-#: includes/classes/class-blocks.php:379
-msgid "Maghrib"
-msgstr ""
-
-#: includes/classes/class-blocks.php:157
-#: includes/classes/class-blocks.php:383
-msgid "Isha"
-msgstr ""
-
-#: includes/classes/class-blocks.php:322
-msgid "Select City"
-msgstr ""
-
-#: includes/classes/class-blocks.php:354
-msgid "Time"
-msgstr ""
-
-#: build/index.js:1
-#: src/city-selector.js:20
-msgid "City Links"
-msgstr ""
-
-#: build/index.js:1
-#: src/city-selector.js:21
-msgid "Display all city selector."
-msgstr ""
-
-#: build/index.js:1
-#: src/daily.js:59
-msgid "Daily"
-msgstr ""
-
-#: build/index.js:1
-#: src/daily.js:60
-msgid "Display daily ramadan time."
-msgstr ""
-
-#: build/index.js:1
-#: src/daily.js:16
-#: src/monthly.js:32
-#: src/ramadan.js:15
-#: src/yearly.js:21
+#: build/daily/index.js:211
+#: build/monthly/index.js:225
+#: build/ramadan/index.js:211
+#: build/yearly/index.js:217
+#: src/daily/index.js:15
+#: src/monthly/index.js:28
+#: src/ramadan/index.js:15
+#: src/yearly/index.js:19
+#: build/daily/index.js:93
+#: build/monthly/index.js:106
+#: build/ramadan/index.js:93
+#: build/yearly/index.js:97
 msgid "Settings"
 msgstr ""
 
-#: build/index.js:1
-#: src/daily.js:27
-#: src/monthly.js:58
-#: src/ramadan.js:26
-#: src/yearly.js:35
+#: build/daily/index.js:220
+#: build/monthly/index.js:247
+#: build/ramadan/index.js:220
+#: build/yearly/index.js:229
+#: src/daily/index.js:26
+#: src/monthly/index.js:54
+#: src/ramadan/index.js:26
+#: src/yearly/index.js:33
+#: build/daily/index.js:104
+#: build/monthly/index.js:132
+#: build/ramadan/index.js:104
+#: build/yearly/index.js:111
 msgid "City"
 msgstr ""
 
-#: build/index.js:1
-#: src/monthly.js:90
-msgid "Monthly"
-msgstr ""
-
-#: build/index.js:1
-#: src/monthly.js:91
-msgid "Display monthly ramadan time."
-msgstr ""
-
-#: build/index.js:1
-#: src/monthly.js:34
-#: src/yearly.js:23
+#: build/monthly/index.js:227
+#: build/yearly/index.js:219
+#: src/monthly/index.js:30
+#: src/yearly/index.js:21
+#: build/monthly/index.js:108
+#: build/yearly/index.js:99
 msgid "Year"
 msgstr ""
 
-#: build/index.js:1
-#: src/monthly.js:37
-#: src/monthly.js:49
-#: src/yearly.js:26
+#: build/monthly/index.js:230
+#: build/monthly/index.js:240
+#: build/yearly/index.js:222
+#: src/monthly/index.js:33
+#: src/monthly/index.js:45
+#: src/yearly/index.js:24
+#: build/monthly/index.js:111
+#: build/monthly/index.js:123
+#: build/yearly/index.js:102
 msgid "Current"
 msgstr ""
 
-#: build/index.js:1
-#: src/monthly.js:46
+#: build/monthly/index.js:237
+#: src/monthly/index.js:42
+#: build/monthly/index.js:120
 msgid "Month"
 msgstr ""
 
-#: build/index.js:1
-#: src/month-links.js:20
-msgid "Month Links"
-msgstr ""
-
-#: build/index.js:1
-#: src/month-links.js:21
-msgid "Display all month links."
-msgstr ""
-
-#: build/index.js:1
-#: src/ramadan.js:59
-msgid "Display ramadan calendar."
-msgstr ""
-
-#: build/index.js:1
-#: src/ramadan.js:17
+#: build/ramadan/index.js:213
+#: src/ramadan/index.js:17
+#: build/ramadan/index.js:95
 msgid "Start Date"
 msgstr ""
 
-#: build/index.js:1
-#: src/yearly.js:67
+#: build/city-selector/block.json
+#: src/city-selector/block.json
+msgctxt "block title"
+msgid "City Selector"
+msgstr ""
+
+#: build/city-selector/block.json
+#: src/city-selector/block.json
+msgctxt "block description"
+msgid "Display all city as dropdown."
+msgstr ""
+
+#: build/city-selector/block.json
+#: build/daily/block.json
+#: build/month-links/block.json
+#: build/monthly/block.json
+#: build/ramadan/block.json
+#: build/yearly/block.json
+#: src/city-selector/block.json
+#: src/daily/block.json
+#: src/month-links/block.json
+#: src/monthly/block.json
+#: src/ramadan/block.json
+#: src/yearly/block.json
+msgctxt "block keyword"
+msgid "ramadan"
+msgstr ""
+
+#: build/city-selector/block.json
+#: src/city-selector/block.json
+msgctxt "block keyword"
+msgid "cities"
+msgstr ""
+
+#: build/city-selector/block.json
+#: src/city-selector/block.json
+msgctxt "block keyword"
+msgid "city"
+msgstr ""
+
+#: build/daily/block.json
+#: src/daily/block.json
+msgctxt "block title"
+msgid "Daily Ramadan Time"
+msgstr ""
+
+#: build/daily/block.json
+#: src/daily/block.json
+msgctxt "block description"
+msgid "Display daily ramadan time."
+msgstr ""
+
+#: build/daily/block.json
+#: src/daily/block.json
+msgctxt "block keyword"
+msgid "daily"
+msgstr ""
+
+#: build/daily/block.json
+#: src/daily/block.json
+msgctxt "block keyword"
+msgid "time"
+msgstr ""
+
+#: build/month-links/block.json
+#: src/month-links/block.json
+msgctxt "block title"
+msgid "Month Links"
+msgstr ""
+
+#: build/month-links/block.json
+#: src/month-links/block.json
+msgctxt "block description"
+msgid "Display all month links."
+msgstr ""
+
+#: build/month-links/block.json
+#: src/month-links/block.json
+msgctxt "block keyword"
+msgid "month"
+msgstr ""
+
+#: build/month-links/block.json
+#: src/month-links/block.json
+msgctxt "block keyword"
+msgid "links"
+msgstr ""
+
+#: build/monthly/block.json
+#: build/ramadan/block.json
+#: src/monthly/block.json
+#: src/ramadan/block.json
+msgctxt "block title"
+msgid "Ramadan"
+msgstr ""
+
+#: build/monthly/block.json
+#: src/monthly/block.json
+msgctxt "block description"
+msgid "Display monthly ramadan time."
+msgstr ""
+
+#: build/monthly/block.json
+#: build/ramadan/block.json
+#: src/monthly/block.json
+#: src/ramadan/block.json
+msgctxt "block keyword"
+msgid "monthly"
+msgstr ""
+
+#: build/ramadan/block.json
+#: build/yearly/block.json
+#: src/ramadan/block.json
+#: src/yearly/block.json
+msgctxt "block description"
+msgid "Display yearly ramadan time."
+msgstr ""
+
+#: build/yearly/block.json
+#: src/yearly/block.json
+msgctxt "block title"
 msgid "Yearly"
 msgstr ""
 
-#: build/index.js:1
-#: src/yearly.js:68
-msgid "Display yearly ramadan time."
+#: build/yearly/block.json
+#: src/yearly/block.json
+msgctxt "block keyword"
+msgid "yearly"
 msgstr ""

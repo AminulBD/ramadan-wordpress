@@ -32,22 +32,3 @@
 		}
 	}
 }
-
-.prayer-times-table {
-	border: 1px solid #ddd;
-
-	> thead > tr > th {
-		text-align: center;
-		border: 1px solid #ddd;
-	}
-
-	> tbody > tr > td {
-		text-align: center;
-		padding: 5px 10px;
-		border: 1px solid #ddd;
-	}
-
-	> tbody > tr > td:first-child {
-		text-align: left;
-	}
-}

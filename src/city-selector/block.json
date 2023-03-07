@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ramadan/city-selector",
+	"title": "City Selector",
+	"category": "ramadan",
+	"icon": "megaphone",
+	"description": "Display all city as dropdown.",
+	"keywords": [
+		"ramadan",
+		"cities",
+		"city"
+	],
+	"example": {
+		"attributes": {}
+	},
+	"textdomain": "ramadan",
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

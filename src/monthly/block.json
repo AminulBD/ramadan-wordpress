@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ramadan/monthly",
+	"title": "Monthly Ramadan Time",
+	"category": "ramadan",
+	"icon": "megaphone",
+	"description": "Display monthly ramadan time.",
+	"keywords": [
+		"ramadan",
+		"monthly"
+	],
+	"version": "1.0.0",
+	"textdomain": "ramadan",
+	"attributes": {
+		"year": {
+			"type": "string"
+		},
+		"month": {
+			"type": "string"
+		},
+		"city": {
+			"type": "string"
+		}
+	},
+	"example": {
+		"attributes": {
+			"year": "2022",
+			"month": "january",
+			"city": "Dhaka"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

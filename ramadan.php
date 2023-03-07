@@ -3,14 +3,14 @@
  * Plugin Name: Ramadan
  * Plugin URI: https://aminul.net/wordpress-plugins/ramadan
  * Description: Display Ramadan schedule.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Aminul Islam
  * Author URI: https://aminul.net/
  * License: GPLv2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: ramadan
  * Domain Path: /languages
- * Requires at least: 5.3
+ * Requires at least: 5.8
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
