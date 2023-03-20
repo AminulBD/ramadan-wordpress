@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'RAMADAN_VERSION', '1.0.2' );
+define( 'RAMADAN_VERSION', '1.0.3' );
 define( 'RAMADAN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'RAMADAN_URL', plugin_dir_url( __FILE__ ) );
 

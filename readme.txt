@@ -40,14 +40,14 @@ Content variables are the variables that can be used anywhere in the post title 
 - {{month}}: Display the current month. Example: March
 - {{year}}: Display the current year. Example: 2020
 - {{sahri}}: Display the current sahri time. Example: 04:40 AM
-- {{fajr}}: Display the current fajr time. Example: 04:50 AM
-- {{sunrise}}: Display the current sunrise time. Example: 05:30 AM
-- {{dhuhr}}: Display the current dhuhr time. Example: 12:30 PM
-- {{asr}}: Display the current asr time. Example: 03:30 PM
-- {{maghrib}}: Display the current maghrib time. Example: 05:30 PM
-- {{iftar}}: Display the current iftar time. Example: 05:30 PM
-- {{sunset}}: Display the current sunset time. Example: 06:10 PM
-- {{isha}}: Display the current isha time. Example: 07:50 PM
+- {{fajr_time}}: Display the current fajr time. Example: 04:50 AM
+- {{sunrise_time}}: Display the current sunrise time. Example: 05:30 AM
+- {{dhuhr_time}}: Display the current dhuhr time. Example: 12:30 PM
+- {{asr_time}}: Display the current asr time. Example: 03:30 PM
+- {{maghrib_time}}: Display the current maghrib time. Example: 05:30 PM
+- {{iftar_time}}: Display the current iftar time. Example: 05:30 PM
+- {{sunset_time}}: Display the current sunset time. Example: 06:10 PM
+- {{isha_time}}: Display the current isha time. Example: 07:50 PM
 
 == Changelog ==
 
