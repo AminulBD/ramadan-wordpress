@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-03-20T09:27:28+00:00\n"
+"POT-Creation-Date: 2023-03-20T11:40:13+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: ramadan\n"
@@ -41,20 +41,17 @@ msgid "Select City"
 msgstr ""
 
 #: build/ramadan/render.php:10
-#: build/ramadan/index.js:276
-#: build/ramadan/index.js:175
+#: build/ramadan/index.js:1
 msgid "10 Days: Mercy of Allah"
 msgstr ""
 
 #: build/ramadan/render.php:11
-#: build/ramadan/index.js:283
-#: build/ramadan/index.js:184
+#: build/ramadan/index.js:1
 msgid "10 Days: Forgiveness of Allah"
 msgstr ""
 
 #: build/ramadan/render.php:12
-#: build/ramadan/index.js:290
-#: build/ramadan/index.js:193
+#: build/ramadan/index.js:1
 msgid "10 Days: Safety from the Hellfire"
 msgstr ""
 
@@ -96,43 +93,27 @@ msgstr ""
 #: includes/classes/class-admin.php:80
 #: includes/classes/class-admin.php:93
 #: includes/classes/class-admin.php:106
-#: build/daily-namaz/index.js:228
-#: build/daily/index.js:228
-#: build/monthly/index.js:255
-#: build/ramadan/index.js:228
-#: build/yearly/index.js:237
-#: build/daily-namaz/index.js:110
-#: build/daily/index.js:116
-#: build/monthly/index.js:139
-#: build/ramadan/index.js:111
-#: build/yearly/index.js:118
+#: build/daily/index.js:1
+#: build/monthly/index.js:1
+#: build/ramadan/index.js:1
+#: build/yearly/index.js:1
 msgid "- Select -"
 msgstr ""
 
 #: includes/classes/class-admin.php:127
 #: includes/classes/class-admin.php:135
-#: build/daily/index.js:249
-#: build/monthly/index.js:276
-#: build/ramadan/index.js:249
-#: build/yearly/index.js:258
-#: build/daily/index.js:148
-#: build/monthly/index.js:171
-#: build/ramadan/index.js:143
-#: build/yearly/index.js:150
+#: build/daily/index.js:1
+#: build/monthly/index.js:1
+#: build/ramadan/index.js:1
+#: build/yearly/index.js:1
 msgid "Day Format"
 msgstr ""
 
 #: includes/classes/class-admin.php:131
-#: build/daily-namaz/index.js:235
-#: build/daily/index.js:235
-#: build/monthly/index.js:262
-#: build/ramadan/index.js:235
-#: build/yearly/index.js:244
-#: build/daily-namaz/index.js:121
-#: build/daily/index.js:130
-#: build/monthly/index.js:153
-#: build/ramadan/index.js:125
-#: build/yearly/index.js:132
+#: build/daily/index.js:1
+#: build/monthly/index.js:1
+#: build/ramadan/index.js:1
+#: build/yearly/index.js:1
 msgid "Date Format"
 msgstr ""
 
@@ -145,16 +126,10 @@ msgid "Year Format"
 msgstr ""
 
 #: includes/classes/class-admin.php:147
-#: build/daily-namaz/index.js:242
-#: build/daily/index.js:242
-#: build/monthly/index.js:269
-#: build/ramadan/index.js:242
-#: build/yearly/index.js:251
-#: build/daily-namaz/index.js:130
-#: build/daily/index.js:139
-#: build/monthly/index.js:162
-#: build/ramadan/index.js:134
-#: build/yearly/index.js:141
+#: build/daily/index.js:1
+#: build/monthly/index.js:1
+#: build/ramadan/index.js:1
+#: build/yearly/index.js:1
 msgid "Time Format"
 msgstr ""
 
@@ -423,10 +398,7 @@ msgid "Netrokona"
 msgstr ""
 
 #: includes/classes/class-helper.php:144
-#: build/daily-namaz/index.js:214
-#: build/daily/index.js:214
-#: build/daily-namaz/index.js:95
-#: build/daily/index.js:100
+#: build/daily/index.js:1
 msgid "Date"
 msgstr ""
 
@@ -470,86 +442,58 @@ msgstr ""
 msgid "Isha"
 msgstr ""
 
-#: build/daily-namaz/index.js:212
-#: build/daily/index.js:212
-#: build/monthly/index.js:226
-#: build/ramadan/index.js:212
-#: build/yearly/index.js:218
-#: build/daily-namaz/index.js:93
-#: build/daily/index.js:98
-#: build/monthly/index.js:106
-#: build/ramadan/index.js:93
-#: build/yearly/index.js:97
+#: build/daily/index.js:1
+#: build/monthly/index.js:1
+#: build/ramadan/index.js:1
+#: build/yearly/index.js:1
 msgid "Settings"
 msgstr ""
 
-#: build/daily-namaz/index.js:221
-#: build/daily/index.js:221
-#: build/monthly/index.js:248
-#: build/ramadan/index.js:221
-#: build/yearly/index.js:230
-#: build/daily-namaz/index.js:104
-#: build/daily/index.js:109
-#: build/monthly/index.js:132
-#: build/ramadan/index.js:104
-#: build/yearly/index.js:111
+#: build/daily/index.js:1
+#: build/monthly/index.js:1
+#: build/ramadan/index.js:1
+#: build/yearly/index.js:1
 msgid "City"
 msgstr ""
 
-#: build/daily/index.js:256
-#: build/monthly/index.js:283
-#: build/ramadan/index.js:256
-#: build/yearly/index.js:265
-#: build/daily/index.js:156
-#: build/monthly/index.js:180
-#: build/ramadan/index.js:152
-#: build/yearly/index.js:159
+#: build/daily/index.js:1
+#: build/monthly/index.js:1
+#: build/ramadan/index.js:1
+#: build/yearly/index.js:1
 msgid "Fields"
 msgstr ""
 
-#: build/monthly/index.js:228
-#: build/yearly/index.js:220
-#: build/monthly/index.js:108
-#: build/yearly/index.js:99
+#: build/monthly/index.js:1
+#: build/yearly/index.js:1
 msgid "Year"
 msgstr ""
 
-#: build/monthly/index.js:231
-#: build/monthly/index.js:241
-#: build/yearly/index.js:223
-#: build/monthly/index.js:111
-#: build/monthly/index.js:123
-#: build/yearly/index.js:102
+#: build/monthly/index.js:1
+#: build/yearly/index.js:1
 msgid "Current"
 msgstr ""
 
-#: build/monthly/index.js:238
-#: build/monthly/index.js:120
+#: build/monthly/index.js:1
 msgid "Month"
 msgstr ""
 
-#: build/ramadan/index.js:214
-#: build/ramadan/index.js:95
+#: build/ramadan/index.js:1
 msgid "Start Date"
 msgstr ""
 
-#: build/ramadan/index.js:273
-#: build/ramadan/index.js:172
+#: build/ramadan/index.js:1
 msgid "Phase Titles"
 msgstr ""
 
-#: build/ramadan/index.js:275
-#: build/ramadan/index.js:174
+#: build/ramadan/index.js:1
 msgid "First Phase"
 msgstr ""
 
-#: build/ramadan/index.js:282
-#: build/ramadan/index.js:183
+#: build/ramadan/index.js:1
 msgid "Second Phase"
 msgstr ""
 
-#: build/ramadan/index.js:289
-#: build/ramadan/index.js:192
+#: build/ramadan/index.js:1
 msgid "Third Phase"
 msgstr ""
 
@@ -564,7 +508,6 @@ msgid "Display all city as dropdown."
 msgstr ""
 
 #: build/city-selector/block.json
-#: build/daily-namaz/block.json
 #: build/daily/block.json
 #: build/month-links/block.json
 #: build/monthly/block.json
@@ -584,28 +527,6 @@ msgctxt "block keyword"
 msgid "city"
 msgstr ""
 
-#: build/daily-namaz/block.json
-msgctxt "block title"
-msgid "Daily Namaz Time"
-msgstr ""
-
-#: build/daily-namaz/block.json
-msgctxt "block description"
-msgid "Display daily namaz time."
-msgstr ""
-
-#: build/daily-namaz/block.json
-#: build/daily/block.json
-msgctxt "block keyword"
-msgid "daily"
-msgstr ""
-
-#: build/daily-namaz/block.json
-#: build/daily/block.json
-msgctxt "block keyword"
-msgid "time"
-msgstr ""
-
 #: build/daily/block.json
 msgctxt "block title"
 msgid "Daily Ramadan Time"
@@ -614,6 +535,16 @@ msgstr ""
 #: build/daily/block.json
 msgctxt "block description"
 msgid "Display daily ramadan time."
+msgstr ""
+
+#: build/daily/block.json
+msgctxt "block keyword"
+msgid "daily"
+msgstr ""
+
+#: build/daily/block.json
+msgctxt "block keyword"
+msgid "time"
 msgstr ""
 
 #: build/month-links/block.json
