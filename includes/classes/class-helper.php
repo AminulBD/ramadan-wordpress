@@ -112,6 +112,16 @@ class Helper {
 		];
 	}
 
+	public static function get_cities_flatten() {
+		$cities = [];
+
+		foreach ( self::get_cities() as $division ) {
+			$cities = array_merge( $cities, $division['cities'] );
+		}
+
+		return $cities;
+	}
+
 	public static function get_months() {
 		return [
 			'january'   => date_i18n( 'F', strtotime( '2000-01-01' ) ),
