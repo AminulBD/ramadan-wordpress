@@ -20,7 +20,13 @@ class Prayer_Calendar {
 		return array_map( function ( $item ) use ( $sunrise, $sunset, $riseModifier, $setModifier ) {
 			$item['sahri']   = date( 'H:i', strtotime( "{$item['sahri']} $riseModifier $sunrise minutes" ) );
 			$item['fajr']    = date( 'H:i', strtotime( "{$item['fajr']} $riseModifier $sunrise minutes" ) );
+			$item['sunrise'] = date( 'H:i', strtotime( "{$item['sunrise']} $riseModifier $sunrise minutes" ) );
+			$item['dhuhr']   = date( 'H:i', strtotime( "{$item['dhuhr']} $riseModifier $sunrise minutes" ) );
+			$item['asr']     = date( 'H:i', strtotime( "{$item['asr']} $riseModifier $sunrise minutes" ) );
+			$item['sunset']  = date( 'H:i', strtotime( "{$item['sunset']} $riseModifier $sunset minutes" ) );
+			$item['iftar']   = date( 'H:i', strtotime( "{$item['iftar']} $riseModifier $sunset minutes" ) );
 			$item['maghrib'] = date( 'H:i', strtotime( "{$item['maghrib']} $setModifier $sunset minutes" ) );
+			$item['isha']    = date( 'H:i', strtotime( "{$item['isha']} $setModifier $sunset minutes" ) );
 
 			return $item;
 		}, $data );
