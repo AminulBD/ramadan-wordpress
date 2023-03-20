@@ -3,7 +3,7 @@
  * Plugin Name: Ramadan
  * Plugin URI: https://aminul.net/wordpress-plugins/ramadan
  * Description: Display Ramadan schedule.
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Aminul Islam
  * Author URI: https://aminul.net/
  * License: GPLv2
