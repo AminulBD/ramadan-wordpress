@@ -2,21 +2,21 @@
 # This file is distributed under the GPLv2.
 msgid ""
 msgstr ""
-"Project-Id-Version: Ramadan 1.0.1\n"
+"Project-Id-Version: Ramadan 1.0.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ramadan\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-03-07T10:45:55+00:00\n"
+"POT-Creation-Date: 2023-03-20T09:27:28+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: ramadan\n"
 
 #. Plugin Name of the plugin
 #: includes/classes/class-admin.php:14
-#: includes/classes/class-blocks.php:27
+#: includes/classes/class-blocks.php:38
 msgid "Ramadan"
 msgstr ""
 
@@ -40,83 +40,122 @@ msgstr ""
 msgid "Select City"
 msgstr ""
 
-#: build/daily/render.php:23
-#: includes/classes/class-helper.php:134
-#: build/daily-namaz/index.js:1
-#: build/daily/index.js:1
-msgid "Date"
-msgstr ""
-
-#: build/daily/render.php:24
-#: includes/classes/class-helper.php:135
-msgid "Sahri"
-msgstr ""
-
-#: build/daily/render.php:25
-msgid "Iftar"
-msgstr ""
-
-#: build/daily/render.php:26
-#: includes/classes/class-helper.php:137
-msgid "Sunrise"
-msgstr ""
-
-#: build/daily/render.php:27
-msgid "Sunset"
-msgstr ""
-
-#: build/ramadan/render.php:40
+#: build/ramadan/render.php:10
+#: build/ramadan/index.js:276
+#: build/ramadan/index.js:175
 msgid "10 Days: Mercy of Allah"
 msgstr ""
 
-#: build/ramadan/render.php:43
+#: build/ramadan/render.php:11
+#: build/ramadan/index.js:283
+#: build/ramadan/index.js:184
 msgid "10 Days: Forgiveness of Allah"
 msgstr ""
 
-#: build/ramadan/render.php:46
+#: build/ramadan/render.php:12
+#: build/ramadan/index.js:290
+#: build/ramadan/index.js:193
 msgid "10 Days: Safety from the Hellfire"
 msgstr ""
 
 #: includes/classes/class-admin.php:13
 #: includes/classes/class-admin.php:24
-#: includes/classes/class-admin.php:42
+#: includes/classes/class-admin.php:43
 msgid "Ramadan Settings"
 msgstr ""
 
-#: includes/classes/class-admin.php:43
+#: includes/classes/class-admin.php:44
 msgid "Ramadan Start Date"
 msgstr ""
 
-#: includes/classes/class-admin.php:44
+#: includes/classes/class-admin.php:45
 msgid "Ramadan Page"
 msgstr ""
 
-#: includes/classes/class-admin.php:45
+#: includes/classes/class-admin.php:46
 msgid "Ramadan City Page"
 msgstr ""
 
-#: includes/classes/class-admin.php:46
+#: includes/classes/class-admin.php:47
 msgid "Namaz Page"
 msgstr ""
 
-#: includes/classes/class-admin.php:47
+#: includes/classes/class-admin.php:48
 msgid "Namaz City Page"
 msgstr ""
 
-#: includes/classes/class-admin.php:52
+#: includes/classes/class-admin.php:49
+msgid "Date Formats"
+msgstr ""
+
+#: includes/classes/class-admin.php:54
 msgid "Settings for Ramadan plugin."
 msgstr ""
 
-#: includes/classes/class-admin.php:59
-#: includes/classes/class-admin.php:78
-#: includes/classes/class-admin.php:91
-#: includes/classes/class-admin.php:104
-#: build/daily-namaz/index.js:1
-#: build/daily/index.js:1
-#: build/monthly/index.js:1
-#: build/ramadan/index.js:1
-#: build/yearly/index.js:1
+#: includes/classes/class-admin.php:61
+#: includes/classes/class-admin.php:80
+#: includes/classes/class-admin.php:93
+#: includes/classes/class-admin.php:106
+#: build/daily-namaz/index.js:228
+#: build/daily/index.js:228
+#: build/monthly/index.js:255
+#: build/ramadan/index.js:228
+#: build/yearly/index.js:237
+#: build/daily-namaz/index.js:110
+#: build/daily/index.js:116
+#: build/monthly/index.js:139
+#: build/ramadan/index.js:111
+#: build/yearly/index.js:118
 msgid "- Select -"
+msgstr ""
+
+#: includes/classes/class-admin.php:127
+#: includes/classes/class-admin.php:135
+#: build/daily/index.js:249
+#: build/monthly/index.js:276
+#: build/ramadan/index.js:249
+#: build/yearly/index.js:258
+#: build/daily/index.js:148
+#: build/monthly/index.js:171
+#: build/ramadan/index.js:143
+#: build/yearly/index.js:150
+msgid "Day Format"
+msgstr ""
+
+#: includes/classes/class-admin.php:131
+#: build/daily-namaz/index.js:235
+#: build/daily/index.js:235
+#: build/monthly/index.js:262
+#: build/ramadan/index.js:235
+#: build/yearly/index.js:244
+#: build/daily-namaz/index.js:121
+#: build/daily/index.js:130
+#: build/monthly/index.js:153
+#: build/ramadan/index.js:125
+#: build/yearly/index.js:132
+msgid "Date Format"
+msgstr ""
+
+#: includes/classes/class-admin.php:139
+msgid "Month Format"
+msgstr ""
+
+#: includes/classes/class-admin.php:143
+msgid "Year Format"
+msgstr ""
+
+#: includes/classes/class-admin.php:147
+#: build/daily-namaz/index.js:242
+#: build/daily/index.js:242
+#: build/monthly/index.js:269
+#: build/ramadan/index.js:242
+#: build/yearly/index.js:251
+#: build/daily-namaz/index.js:130
+#: build/daily/index.js:139
+#: build/monthly/index.js:162
+#: build/ramadan/index.js:134
+#: build/yearly/index.js:141
+msgid "Time Format"
 msgstr ""
 
 #: includes/classes/class-helper.php:9
@@ -383,78 +422,135 @@ msgstr ""
 msgid "Netrokona"
 msgstr ""
 
-#: includes/classes/class-helper.php:136
+#: includes/classes/class-helper.php:144
+#: build/daily-namaz/index.js:214
+#: build/daily/index.js:214
+#: build/daily-namaz/index.js:95
+#: build/daily/index.js:100
+msgid "Date"
+msgstr ""
+
+#: includes/classes/class-helper.php:145
+msgid "Day"
+msgstr ""
+
+#: includes/classes/class-helper.php:146
+msgid "Sahri"
+msgstr ""
+
+#: includes/classes/class-helper.php:147
 msgid "Fajr"
 msgstr ""
 
-#: includes/classes/class-helper.php:138
+#: includes/classes/class-helper.php:148
+msgid "Sunrise"
+msgstr ""
+
+#: includes/classes/class-helper.php:149
 msgid "Dhuhr"
 msgstr ""
 
-#: includes/classes/class-helper.php:139
+#: includes/classes/class-helper.php:150
 msgid "Asr"
 msgstr ""
 
-#: includes/classes/class-helper.php:140
+#: includes/classes/class-helper.php:151
 msgid "Maghrib"
 msgstr ""
 
-#: includes/classes/class-helper.php:141
+#: includes/classes/class-helper.php:152
+msgid "Iftar"
+msgstr ""
+
+#: includes/classes/class-helper.php:153
+msgid "Sunset"
+msgstr ""
+
+#: includes/classes/class-helper.php:154
 msgid "Isha"
 msgstr ""
 
-#: build/daily-namaz/index.js:1
-#: build/daily/index.js:1
-#: build/monthly/index.js:1
-#: build/ramadan/index.js:1
-#: build/yearly/index.js:1
+#: build/daily-namaz/index.js:212
+#: build/daily/index.js:212
+#: build/monthly/index.js:226
+#: build/ramadan/index.js:212
+#: build/yearly/index.js:218
+#: build/daily-namaz/index.js:93
+#: build/daily/index.js:98
+#: build/monthly/index.js:106
+#: build/ramadan/index.js:93
+#: build/yearly/index.js:97
 msgid "Settings"
 msgstr ""
 
-#: build/daily-namaz/index.js:1
-#: build/daily/index.js:1
-#: build/monthly/index.js:1
-#: build/ramadan/index.js:1
-#: build/yearly/index.js:1
+#: build/daily-namaz/index.js:221
+#: build/daily/index.js:221
+#: build/monthly/index.js:248
+#: build/ramadan/index.js:221
+#: build/yearly/index.js:230
+#: build/daily-namaz/index.js:104
+#: build/daily/index.js:109
+#: build/monthly/index.js:132
+#: build/ramadan/index.js:104
+#: build/yearly/index.js:111
 msgid "City"
 msgstr ""
 
-#: build/daily-namaz/index.js:1
-#: build/daily/index.js:1
-#: build/monthly/index.js:1
-#: build/ramadan/index.js:1
-#: build/yearly/index.js:1
-msgid "Date Format"
+#: build/daily/index.js:256
+#: build/monthly/index.js:283
+#: build/ramadan/index.js:256
+#: build/yearly/index.js:265
+#: build/daily/index.js:156
+#: build/monthly/index.js:180
+#: build/ramadan/index.js:152
+#: build/yearly/index.js:159
+msgid "Fields"
 msgstr ""
 
-#: build/daily-namaz/index.js:1
-#: build/daily/index.js:1
-#: build/monthly/index.js:1
-#: build/ramadan/index.js:1
-#: build/yearly/index.js:1
-msgid "Time Format"
-msgstr ""
-
-#: build/monthly/index.js:1
-#: build/yearly/index.js:1
+#: build/monthly/index.js:228
+#: build/yearly/index.js:220
+#: build/monthly/index.js:108
+#: build/yearly/index.js:99
 msgid "Year"
 msgstr ""
 
-#: build/monthly/index.js:1
-#: build/yearly/index.js:1
+#: build/monthly/index.js:231
+#: build/monthly/index.js:241
+#: build/yearly/index.js:223
+#: build/monthly/index.js:111
+#: build/monthly/index.js:123
+#: build/yearly/index.js:102
 msgid "Current"
 msgstr ""
 
-#: build/monthly/index.js:1
+#: build/monthly/index.js:238
+#: build/monthly/index.js:120
 msgid "Month"
 msgstr ""
 
-#: build/ramadan/index.js:1
+#: build/ramadan/index.js:214
+#: build/ramadan/index.js:95
 msgid "Start Date"
 msgstr ""
 
-#: build/ramadan/index.js:1
-msgid "Day Format"
+#: build/ramadan/index.js:273
+#: build/ramadan/index.js:172
+msgid "Phase Titles"
+msgstr ""
+
+#: build/ramadan/index.js:275
+#: build/ramadan/index.js:174
+msgid "First Phase"
+msgstr ""
+
+#: build/ramadan/index.js:282
+#: build/ramadan/index.js:183
+msgid "Second Phase"
+msgstr ""
+
+#: build/ramadan/index.js:289
+#: build/ramadan/index.js:192
+msgid "Third Phase"
 msgstr ""
 
 #: build/city-selector/block.json
