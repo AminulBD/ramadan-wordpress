@@ -6,7 +6,7 @@ class Plugin {
 	private static $instance = null;
 
 	public function __construct() {
-		add_action( 'plugins_loaded', [ $this, 'load_textdomain' ] );
+		add_action( 'init', [ $this, 'load_textdomain' ] );
 		add_action( 'init', [ $this, 'ramadan_rewrite_rule' ] );
 		add_action( 'init', [ $this, 'namaz_rewrite_rule' ] );
 		add_action( 'pre_get_posts', [ $this, 'set_current_city_page' ] );
@@ -27,7 +27,7 @@ class Plugin {
 	}
 
 	public function load_textdomain() {
-		load_plugin_textdomain( 'ramadan', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+		load_plugin_textdomain( 'ramadan', false, 'ramadan/languages' );
 	}
 
 	public function query_vars_filters( $query_vars ) {
