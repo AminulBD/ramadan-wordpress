@@ -25,8 +25,9 @@ class Blocks {
 		}
 
 		wp_localize_script( 'wp-blocks', 'ramadan', [
-			'cities' => Helper::get_cities(),
-			'months' => Helper::get_months(),
+			'cities'   => Helper::get_cities(),
+			'months'   => Helper::get_months(),
+			'headings' => Helper::get_headings(),
 		] );
 	}
 

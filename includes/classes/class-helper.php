@@ -132,12 +132,15 @@ class Helper {
 	public static function get_headings() {
 		return [
 			'date'    => esc_html__( 'Date', 'ramadan' ),
+			'day'     => esc_html__( 'Day', 'ramadan' ),
 			'sahri'   => esc_html__( 'Sahri', 'ramadan' ),
 			'fajr'    => esc_html__( 'Fajr', 'ramadan' ),
 			'sunrise' => esc_html__( 'Sunrise', 'ramadan' ),
 			'dhuhr'   => esc_html__( 'Dhuhr', 'ramadan' ),
 			'asr'     => esc_html__( 'Asr', 'ramadan' ),
 			'maghrib' => esc_html__( 'Maghrib', 'ramadan' ),
+			'iftar'   => esc_html__( 'Iftar', 'ramadan' ),
+			'sunset'  => esc_html__( 'Sunset', 'ramadan' ),
 			'isha'    => esc_html__( 'Isha', 'ramadan' ),
 		];
 	}

@@ -1,10 +1,15 @@
 import { registerBlockType } from '@wordpress/blocks';
 import ServerSideRender from '@wordpress/server-side-render';
 import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
-import { TextControl, SelectControl, PanelBody } from '@wordpress/components';
+import {
+	CheckboxControl,
+	PanelBody,
+	SelectControl,
+	TextControl,
+} from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 import { bangladesh as BDCities } from '../utils/cities';
-import metadata from "./block.json";
+import metadata from './block.json';
 
 function Edit( { attributes, setAttributes } ) {
 	const blockProps = useBlockProps();
@@ -29,11 +34,15 @@ function Edit( { attributes, setAttributes } ) {
 							setAttributes( { city: value } )
 						}
 					>
-						<option value="">{ __( '- Select -', 'ramadan' ) }</option>
+						<option value="">
+							{ __( '- Select -', 'ramadan' ) }
+						</option>
 						{ BDCities.map( ( division, di ) => (
 							<optgroup key={ di } label={ division.label }>
 								{ division.options.map( ( city, ci ) => (
-									<option key={ ci } value={ city.value }>{ city.label }</option>
+									<option key={ ci } value={ city.value }>
+										{ city.label }
+									</option>
 								) ) }
 							</optgroup>
 						) ) }
@@ -56,11 +65,42 @@ function Edit( { attributes, setAttributes } ) {
 							setAttributes( { timeformat: value } )
 						}
 					/>
+
+					<TextControl
+						label={ __( 'Day Format', 'ramadan' ) }
+						value={ attributes.dayformat ?? 'D' }
+						type="text"
+						onChange={ ( value ) =>
+							setAttributes( { dayformat: value } )
+						}
+					/>
+				</PanelBody>
+				<PanelBody title={ __( 'Fields', 'ramadan' ) }>
+					{ Object.keys( window.ramadan.headings ).map(
+						( key, index ) => (
+							<CheckboxControl
+								key={ index }
+								label={ window.ramadan.headings[key] ?? '-' }
+								checked={ attributes.columns?.[key] }
+								onChange={ ( value ) => {
+									setAttributes( {
+										columns: {
+											...attributes.columns,
+											[key]: value,
+										},
+									} );
+								} }
+							/>
+						)
+					) }
 				</PanelBody>
 			</InspectorControls>
 
 			<div { ...blockProps }>
-				<ServerSideRender block={ metadata.name } attributes={ attributes } />
+				<ServerSideRender
+					block={ metadata.name }
+					attributes={ attributes }
+				/>
 			</div>
 		</>
 	);

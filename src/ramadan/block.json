@@ -27,6 +27,31 @@
 		},
 		"dayformat": {
 			"type": "string"
+		},
+		"first_phase_title": {
+			"type": "string"
+		},
+		"second_phase_title": {
+			"type": "string"
+		},
+		"third_phase_title": {
+			"type": "string"
+		},
+		"columns": {
+			"type": "object",
+			"default": {
+				"date": true,
+				"day": true,
+				"sahri": true,
+				"fajr": true,
+				"sunrise": false,
+				"dhuhr": false,
+				"asr": false,
+				"iftar": true,
+				"maghrib": true,
+				"sunset": false,
+				"isha": false
+			}
 		}
 	},
 	"example": {
@@ -35,7 +60,23 @@
 			"city": "Dhaka",
 			"dateformat": "d M",
 			"timeformat": "h:i A",
-			"dayformat": "D"
+			"dayformat": "D",
+			"first_phase_title ": "10 Days: Mercy of Allah",
+			"second_phase_title": "10 Days: Forgiveness of Allah",
+			"third_phase_title ": "10 Days: Safety from the Hellfire",
+			"columns": {
+				"date": true,
+				"day": true,
+				"sahri": true,
+				"fajr": true,
+				"sunrise": false,
+				"dhuhr": false,
+				"asr": false,
+				"iftar": true,
+				"maghrib": true,
+				"sunset": false,
+				"isha": false
+			}
 		}
 	},
 	"editorScript": "file:./index.js",

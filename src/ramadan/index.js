@@ -1,10 +1,10 @@
 import { registerBlockType } from '@wordpress/blocks';
 import ServerSideRender from '@wordpress/server-side-render';
 import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
-import { PanelBody, SelectControl, TextControl } from '@wordpress/components';
+import { CheckboxControl, PanelBody, SelectControl, TextControl } from '@wordpress/components';
 import { bangladesh as BDCities } from '../utils/cities';
 import { __ } from '@wordpress/i18n';
-import metadata from "./block.json";
+import metadata from './block.json';
 
 function Edit( { attributes, setAttributes } ) {
 	const blockProps = useBlockProps();
@@ -29,11 +29,15 @@ function Edit( { attributes, setAttributes } ) {
 							setAttributes( { city: value } )
 						}
 					>
-						<option value="">{ __( '- Select -', 'ramadan' ) }</option>
+						<option value="">
+							{ __( '- Select -', 'ramadan' ) }
+						</option>
 						{ BDCities.map( ( division, di ) => (
 							<optgroup key={ di } label={ division.label }>
 								{ division.options.map( ( city, ci ) => (
-									<option key={ ci } value={ city.value }>{ city.label }</option>
+									<option key={ ci } value={ city.value }>
+										{ city.label }
+									</option>
 								) ) }
 							</optgroup>
 						) ) }
@@ -66,10 +70,62 @@ function Edit( { attributes, setAttributes } ) {
 						}
 					/>
 				</PanelBody>
+
+				<PanelBody title={ __( 'Fields', 'ramadan' ) }>
+					{ Object.keys( window.ramadan.headings ).map(
+						( key, index ) => (
+							<CheckboxControl
+								key={ index }
+								label={ window.ramadan.headings[key] ?? '-' }
+								checked={ attributes.columns?.[key] }
+								onChange={ ( value ) => {
+									setAttributes( {
+										columns: {
+											...attributes.columns,
+											[key]: value,
+										},
+									} );
+								} }
+							/>
+						)
+					) }
+				</PanelBody>
+
+				<PanelBody title={ __( 'Phase Titles', 'ramadan' ) }>
+					<TextControl
+						label={ __( 'First Phase', 'ramadan' ) }
+						value={ attributes.first_phase_title ?? __( '10 Days: Mercy of Allah', 'ramadan' ) }
+						type="text"
+						onChange={ ( value ) =>
+							setAttributes( { first_phase_title: value } )
+						}
+					/>
+
+					<TextControl
+						label={ __( 'Second Phase', 'ramadan' ) }
+						value={ attributes.second_phase_title ?? __( '10 Days: Forgiveness of Allah', 'ramadan' ) }
+						type="text"
+						onChange={ ( value ) =>
+							setAttributes( { second_phase_title: value } )
+						}
+					/>
+
+					<TextControl
+						label={ __( 'Third Phase', 'ramadan' ) }
+						value={ attributes.third_phase_title ?? __( '10 Days: Safety from the Hellfire', 'ramadan' ) }
+						type="text"
+						onChange={ ( value ) =>
+							setAttributes( { third_phase_title: value } )
+						}
+					/>
+				</PanelBody>
 			</InspectorControls>
 
 			<div { ...blockProps }>
-				<ServerSideRender block={ metadata.name } attributes={ attributes } />
+				<ServerSideRender
+					block={ metadata.name }
+					attributes={ attributes }
+				/>
 			</div>
 		</>
 	);

@@ -25,6 +25,25 @@
 		},
 		"timeformat": {
 			"type": "string"
+		},
+		"dayformat": {
+			"type": "string"
+		},
+		"columns": {
+			"type": "object",
+			"default": {
+				"date": true,
+				"day": false,
+				"sahri": true,
+				"fajr": true,
+				"sunrise": true,
+				"dhuhr": true,
+				"asr": true,
+				"maghrib": true,
+				"iftar": false,
+				"sunset": false,
+				"isha": true
+			}
 		}
 	},
 	"example": {
@@ -32,7 +51,21 @@
 			"date": "2023-01-01",
 			"city": "Dhaka",
 			"dateformat": "d F, l",
-			"timeformat": "h:i A"
+			"timeformat": "h:i A",
+			"dayformat": "D",
+			"columns": {
+				"date": true,
+				"day": false,
+				"sahri": true,
+				"fajr": true,
+				"sunrise": true,
+				"dhuhr": true,
+				"asr": true,
+				"maghrib": true,
+				"iftar": false,
+				"sunset": true,
+				"isha": true
+			}
 		}
 	},
 	"editorScript": "file:./index.js",
