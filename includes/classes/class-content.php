@@ -8,6 +8,7 @@ class Content {
 	public function __construct() {
 		add_filter( 'the_content', [ $this, 'content' ] );
 		add_filter( 'the_title', [ $this, 'content' ] );
+		add_filter( 'wp_title', [ $this, 'content' ] );
 		add_filter( 'document_title', [ $this, 'content' ] );
 	}
 
