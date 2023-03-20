@@ -1,0 +1,606 @@
+# Copyright (C) 2023 Aminul Islam
+# This file is distributed under the GPLv2.
+msgid ""
+msgstr ""
+"Project-Id-Version: Ramadan 1.0.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ramadan\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-03-20T11:49:58+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.1\n"
+"X-Domain: ramadan\n"
+"Language: bn_BD\n"
+
+#. Plugin Name of the plugin
+#: includes/classes/class-admin.php:14
+#: includes/classes/class-blocks.php:38
+msgid "Ramadan"
+msgstr "রমজান"
+
+#. Plugin URI of the plugin
+msgid "https://aminul.net/wordpress-plugins/ramadan"
+msgstr ""
+
+#. Description of the plugin
+msgid "Display Ramadan schedule."
+msgstr "রমজান ও নামজের সময় সূচী দেখান।"
+
+#. Author of the plugin
+msgid "Aminul Islam"
+msgstr "আমিনুল ইসলাম"
+
+#. Author URI of the plugin
+msgid "https://aminul.net/"
+msgstr ""
+
+#: build/city-selector/render.php:14
+msgid "Select City"
+msgstr "শহর নির্বাচণ করুন"
+
+#: build/ramadan/render.php:10
+#: build/ramadan/index.js:1
+msgid "10 Days: Mercy of Allah"
+msgstr "রহমতের ১০ দিন"
+
+#: build/ramadan/render.php:11
+#: build/ramadan/index.js:1
+msgid "10 Days: Forgiveness of Allah"
+msgstr "মাগফিরাতের ১০ দিন"
+
+#: build/ramadan/render.php:12
+#: build/ramadan/index.js:1
+msgid "10 Days: Safety from the Hellfire"
+msgstr "নাজাতের ১০ দিন"
+
+#: includes/classes/class-admin.php:13
+#: includes/classes/class-admin.php:24
+#: includes/classes/class-admin.php:43
+msgid "Ramadan Settings"
+msgstr "রমজান সেটিং"
+
+#: includes/classes/class-admin.php:44
+msgid "Ramadan Start Date"
+msgstr "রমজান শুরুর তারিখ"
+
+#: includes/classes/class-admin.php:45
+msgid "Ramadan Page"
+msgstr "রমজান পৃষ্ঠা"
+
+#: includes/classes/class-admin.php:46
+msgid "Ramadan City Page"
+msgstr "রমজান শহর পৃষ্ঠা"
+
+#: includes/classes/class-admin.php:47
+msgid "Namaz Page"
+msgstr "নামাজ পৃষ্ঠা"
+
+#: includes/classes/class-admin.php:48
+msgid "Namaz City Page"
+msgstr "নামাজ শহর পৃষ্ঠা"
+
+#: includes/classes/class-admin.php:49
+msgid "Date Formats"
+msgstr "তারিখ ফরম্যাটসমূহ"
+
+#: includes/classes/class-admin.php:54
+msgid "Settings for Ramadan plugin."
+msgstr "রমজান প্লাগইনের সেটিংস।"
+
+#: includes/classes/class-admin.php:61
+#: includes/classes/class-admin.php:80
+#: includes/classes/class-admin.php:93
+#: includes/classes/class-admin.php:106
+#: build/daily/index.js:1
+#: build/monthly/index.js:1
+#: build/ramadan/index.js:1
+#: build/yearly/index.js:1
+msgid "- Select -"
+msgstr "- নির্বাচণ -"
+
+#: includes/classes/class-admin.php:127
+#: includes/classes/class-admin.php:135
+#: build/daily/index.js:1
+#: build/monthly/index.js:1
+#: build/ramadan/index.js:1
+#: build/yearly/index.js:1
+msgid "Day Format"
+msgstr "দিন ফরম্যাট"
+
+#: includes/classes/class-admin.php:131
+#: build/daily/index.js:1
+#: build/monthly/index.js:1
+#: build/ramadan/index.js:1
+#: build/yearly/index.js:1
+msgid "Date Format"
+msgstr "তারিখ ফরম্যাট"
+
+#: includes/classes/class-admin.php:139
+msgid "Month Format"
+msgstr "মাস ফরম্যাট"
+
+#: includes/classes/class-admin.php:143
+msgid "Year Format"
+msgstr "বছর ফরম্যাট"
+
+#: includes/classes/class-admin.php:147
+#: build/daily/index.js:1
+#: build/monthly/index.js:1
+#: build/ramadan/index.js:1
+#: build/yearly/index.js:1
+msgid "Time Format"
+msgstr "সময় ফরম্যাট"
+
+#: includes/classes/class-helper.php:9
+#: includes/classes/class-helper.php:18
+msgid "Chattogram"
+msgstr "চট্টগ্রাম"
+
+#: includes/classes/class-helper.php:11
+msgid "Comilla"
+msgstr "কুমিল্লা"
+
+#: includes/classes/class-helper.php:12
+msgid "Feni"
+msgstr "ফেনী"
+
+#: includes/classes/class-helper.php:13
+msgid "Brahmanbaria"
+msgstr "ব্রাহ্মণবাড়িয়া"
+
+#: includes/classes/class-helper.php:14
+msgid "Rangamati"
+msgstr "রাঙ্গামাটি"
+
+#: includes/classes/class-helper.php:15
+msgid "Noakhali"
+msgstr "নোয়াখালী"
+
+#: includes/classes/class-helper.php:16
+msgid "Chandpur"
+msgstr "চাঁদপুর"
+
+#: includes/classes/class-helper.php:17
+msgid "Lakshmipur"
+msgstr "লক্ষ্মীপুর"
+
+#: includes/classes/class-helper.php:19
+msgid "Coxsbazar"
+msgstr "কক্সবাজার"
+
+#: includes/classes/class-helper.php:20
+msgid "Khagrachhari"
+msgstr "খাগড়াছড়ি"
+
+#: includes/classes/class-helper.php:21
+msgid "Bandarban"
+msgstr "বান্দরবান"
+
+#: includes/classes/class-helper.php:25
+#: includes/classes/class-helper.php:30
+msgid "Rajshahi"
+msgstr "রাজশাহী"
+
+#: includes/classes/class-helper.php:27
+msgid "Sirajganj"
+msgstr "সিরাজগঞ্জ"
+
+#: includes/classes/class-helper.php:28
+msgid "Pabna"
+msgstr "পাবনা"
+
+#: includes/classes/class-helper.php:29
+msgid "Bogura"
+msgstr "বগুড়া"
+
+#: includes/classes/class-helper.php:31
+msgid "Natore"
+msgstr "নাটোর"
+
+#: includes/classes/class-helper.php:32
+msgid "Joypurhat"
+msgstr "জয়পুরহাট"
+
+#: includes/classes/class-helper.php:33
+msgid "Chapainawabganj"
+msgstr "চাঁপাইনবাবগঞ্জ"
+
+#: includes/classes/class-helper.php:34
+msgid "Naogaon"
+msgstr "নওগাঁ"
+
+#: includes/classes/class-helper.php:38
+#: includes/classes/class-helper.php:47
+msgid "Khulna"
+msgstr "খুলনা"
+
+#: includes/classes/class-helper.php:40
+msgid "Jashore"
+msgstr "যশোর"
+
+#: includes/classes/class-helper.php:41
+msgid "Satkhira"
+msgstr "সাতক্ষীরা"
+
+#: includes/classes/class-helper.php:42
+msgid "Meherpur"
+msgstr "মেহেরপুর"
+
+#: includes/classes/class-helper.php:43
+msgid "Narail"
+msgstr "নড়াইল"
+
+#: includes/classes/class-helper.php:44
+msgid "Chuadanga"
+msgstr "চুয়াডাঙ্গা"
+
+#: includes/classes/class-helper.php:45
+msgid "Kushtia"
+msgstr "কুষ্টিয়া"
+
+#: includes/classes/class-helper.php:46
+msgid "Magura"
+msgstr "মাগুরা"
+
+#: includes/classes/class-helper.php:48
+msgid "Bagerhat"
+msgstr "বাগেরহাট"
+
+#: includes/classes/class-helper.php:49
+msgid "Jhenaidah"
+msgstr "ঝিনাইদহ"
+
+#: includes/classes/class-helper.php:53
+#: includes/classes/class-helper.php:58
+msgid "Barishal"
+msgstr "বরিশাল"
+
+#: includes/classes/class-helper.php:55
+msgid "Jhalakathi"
+msgstr "ঝালকাঠি"
+
+#: includes/classes/class-helper.php:56
+msgid "Patuakhali"
+msgstr "পটুয়াখালী"
+
+#: includes/classes/class-helper.php:57
+msgid "Pirojpur"
+msgstr "পিরোজপুর"
+
+#: includes/classes/class-helper.php:59
+msgid "Bhola"
+msgstr "ভোলা"
+
+#: includes/classes/class-helper.php:60
+msgid "Barguna"
+msgstr "বরগুনা"
+
+#: includes/classes/class-helper.php:64
+#: includes/classes/class-helper.php:66
+msgid "Sylhet"
+msgstr "সিলেট"
+
+#: includes/classes/class-helper.php:67
+msgid "Moulvibazar"
+msgstr "মৌলভীবাজার"
+
+#: includes/classes/class-helper.php:68
+msgid "Habiganj"
+msgstr "হবিগঞ্জ"
+
+#: includes/classes/class-helper.php:69
+msgid "Sunamganj"
+msgstr "সুনামগঞ্জ"
+
+#: includes/classes/class-helper.php:73
+#: includes/classes/class-helper.php:82
+msgid "Dhaka"
+msgstr "ঢাকা"
+
+#: includes/classes/class-helper.php:75
+msgid "Narsingdi"
+msgstr "নরসিংদী"
+
+#: includes/classes/class-helper.php:76
+msgid "Gazipur"
+msgstr "গাজীপুর"
+
+#: includes/classes/class-helper.php:77
+msgid "Shariatpur"
+msgstr "শরীয়তপুর"
+
+#: includes/classes/class-helper.php:78
+msgid "Narayanganj"
+msgstr "নারায়াণগঞ্জ"
+
+#: includes/classes/class-helper.php:79
+msgid "Tangail"
+msgstr "টাঙ্গাইল"
+
+#: includes/classes/class-helper.php:80
+msgid "Kishoreganj"
+msgstr "কিশোরগঞ্জ"
+
+#: includes/classes/class-helper.php:81
+msgid "Manikganj"
+msgstr "মানিকগঞ্জ"
+
+#: includes/classes/class-helper.php:83
+msgid "Munshiganj"
+msgstr "মুন্সিগঞ্জ"
+
+#: includes/classes/class-helper.php:84
+msgid "Rajbari"
+msgstr "রাজবাড়ি"
+
+#: includes/classes/class-helper.php:85
+msgid "Madaripur"
+msgstr "মাদারীপুর"
+
+#: includes/classes/class-helper.php:86
+msgid "Gopalganj"
+msgstr "গোপালগঞ্জ"
+
+#: includes/classes/class-helper.php:87
+msgid "Faridpur"
+msgstr "ফরিদপুর"
+
+#: includes/classes/class-helper.php:91
+#: includes/classes/class-helper.php:99
+msgid "Rangpur"
+msgstr "রংপুর"
+
+#: includes/classes/class-helper.php:93
+msgid "Panchagarh"
+msgstr "পঞ্চগড়"
+
+#: includes/classes/class-helper.php:94
+msgid "Dinajpur"
+msgstr "দিনাজপুর"
+
+#: includes/classes/class-helper.php:95
+msgid "Lalmonirhat"
+msgstr "লালমনিরহাট"
+
+#: includes/classes/class-helper.php:96
+msgid "Nilphamari"
+msgstr "নীলফামারী"
+
+#: includes/classes/class-helper.php:97
+msgid "Gaibandha"
+msgstr "গাইবান্ধা"
+
+#: includes/classes/class-helper.php:98
+msgid "Thakurgaon"
+msgstr "ঠাকুরগাঁও"
+
+#: includes/classes/class-helper.php:100
+msgid "Kurigram"
+msgstr "কুড়িগ্রাম"
+
+#: includes/classes/class-helper.php:104
+#: includes/classes/class-helper.php:107
+msgid "Mymensingh"
+msgstr "ময়মনসিংহ"
+
+#: includes/classes/class-helper.php:106
+msgid "Sherpur"
+msgstr "শেরপুর"
+
+#: includes/classes/class-helper.php:108
+msgid "Jamalpur"
+msgstr "জামালপুর"
+
+#: includes/classes/class-helper.php:109
+msgid "Netrokona"
+msgstr "নেত্রকোণা"
+
+#: includes/classes/class-helper.php:144
+#: build/daily/index.js:1
+msgid "Date"
+msgstr "তারিখ"
+
+#: includes/classes/class-helper.php:145
+msgid "Day"
+msgstr "দিন"
+
+#: includes/classes/class-helper.php:146
+msgid "Sahri"
+msgstr "সেহরী"
+
+#: includes/classes/class-helper.php:147
+msgid "Fajr"
+msgstr "ফজর"
+
+#: includes/classes/class-helper.php:148
+msgid "Sunrise"
+msgstr "সূর্যোদয়"
+
+#: includes/classes/class-helper.php:149
+msgid "Dhuhr"
+msgstr "দুহর"
+
+#: includes/classes/class-helper.php:150
+msgid "Asr"
+msgstr "আসর"
+
+#: includes/classes/class-helper.php:151
+msgid "Maghrib"
+msgstr "মাগরিব"
+
+#: includes/classes/class-helper.php:152
+msgid "Iftar"
+msgstr "ইফতার"
+
+#: includes/classes/class-helper.php:153
+msgid "Sunset"
+msgstr "সূর্যাস্ত"
+
+#: includes/classes/class-helper.php:154
+msgid "Isha"
+msgstr "এশা"
+
+#: build/daily/index.js:1
+#: build/monthly/index.js:1
+#: build/ramadan/index.js:1
+#: build/yearly/index.js:1
+msgid "Settings"
+msgstr "সেটিংস"
+
+#: build/daily/index.js:1
+#: build/monthly/index.js:1
+#: build/ramadan/index.js:1
+#: build/yearly/index.js:1
+msgid "City"
+msgstr "শহর"
+
+#: build/daily/index.js:1
+#: build/monthly/index.js:1
+#: build/ramadan/index.js:1
+#: build/yearly/index.js:1
+msgid "Fields"
+msgstr "কলাম"
+
+#: build/monthly/index.js:1
+#: build/yearly/index.js:1
+msgid "Year"
+msgstr "বছর"
+
+#: build/monthly/index.js:1
+#: build/yearly/index.js:1
+msgid "Current"
+msgstr "বর্তমান"
+
+#: build/monthly/index.js:1
+msgid "Month"
+msgstr "মাস"
+
+#: build/ramadan/index.js:1
+msgid "Start Date"
+msgstr "শুরুর তারিখ"
+
+#: build/ramadan/index.js:1
+msgid "Phase Titles"
+msgstr "পর্যায় শিরোনাম"
+
+#: build/ramadan/index.js:1
+msgid "First Phase"
+msgstr "প্রথম পর্যায়"
+
+#: build/ramadan/index.js:1
+msgid "Second Phase"
+msgstr "দ্বিতীয় পর্যায়"
+
+#: build/ramadan/index.js:1
+msgid "Third Phase"
+msgstr "তৃতীয় পর্যায়"
+
+#: build/city-selector/block.json
+msgctxt "block title"
+msgid "City Selector"
+msgstr "সিটি নির্বাচক"
+
+#: build/city-selector/block.json
+msgctxt "block description"
+msgid "Display all city as dropdown."
+msgstr "সমস্ত শহর ড্রপডাউন হিসেবে প্রদর্শন করুন।"
+
+#: build/city-selector/block.json
+#: build/daily/block.json
+#: build/month-links/block.json
+#: build/monthly/block.json
+#: build/ramadan/block.json
+#: build/yearly/block.json
+msgctxt "block keyword"
+msgid "ramadan"
+msgstr "রমজান"
+
+#: build/city-selector/block.json
+msgctxt "block keyword"
+msgid "cities"
+msgstr "শহর সমূহ"
+
+#: build/city-selector/block.json
+msgctxt "block keyword"
+msgid "city"
+msgstr "শহর"
+
+#: build/daily/block.json
+msgctxt "block title"
+msgid "Daily Ramadan Time"
+msgstr "দৈনিক রমজান সময়"
+
+#: build/daily/block.json
+msgctxt "block description"
+msgid "Display daily ramadan time."
+msgstr "দৈনিক রমজান সময় প্রদর্শন করুন।"
+
+#: build/daily/block.json
+msgctxt "block keyword"
+msgid "daily"
+msgstr "দৈনিক"
+
+#: build/daily/block.json
+msgctxt "block keyword"
+msgid "time"
+msgstr "সময়"
+
+#: build/month-links/block.json
+msgctxt "block title"
+msgid "Month Links"
+msgstr "মাসের লিংকসমূহ"
+
+#: build/month-links/block.json
+msgctxt "block description"
+msgid "Display all month links."
+msgstr "সমস্ত মাসের লিংকসমূহ প্রদর্শন করুন।"
+
+#: build/month-links/block.json
+msgctxt "block keyword"
+msgid "month"
+msgstr "মাস"
+
+#: build/month-links/block.json
+msgctxt "block keyword"
+msgid "links"
+msgstr "লিংকসমূহ"
+
+#: build/monthly/block.json
+msgctxt "block title"
+msgid "Monthly Ramadan Time"
+msgstr "মাসিক রমজান সময়"
+
+#: build/monthly/block.json
+msgctxt "block description"
+msgid "Display monthly ramadan time."
+msgstr "মাসিক রমজান সময় প্রদর্শন করুন।"
+
+#: build/monthly/block.json
+#: build/ramadan/block.json
+msgctxt "block keyword"
+msgid "monthly"
+msgstr "মাসিক"
+
+#: build/ramadan/block.json
+msgctxt "block title"
+msgid "Ramadan Time"
+msgstr "রমজান সময়"
+
+#: build/ramadan/block.json
+#: build/yearly/block.json
+msgctxt "block description"
+msgid "Display yearly ramadan time."
+msgstr "বার্ষিক রমজান সময় প্রদর্শন করুন।"
+
+#: build/yearly/block.json
+msgctxt "block title"
+msgid "Yearly Ramadan Time"
+msgstr "বার্ষিক রমজান সময়"
+
+#: build/yearly/block.json
+msgctxt "block keyword"
+msgid "yearly"
+msgstr "বার্ষিক"
