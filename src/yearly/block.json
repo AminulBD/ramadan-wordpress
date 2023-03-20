@@ -6,10 +6,7 @@
 	"category": "ramadan",
 	"icon": "megaphone",
 	"description": "Display yearly ramadan time.",
-	"keywords": [
-		"ramadan",
-		"yearly"
-	],
+	"keywords": [ "ramadan", "yearly" ],
 	"attributes": {
 		"year": {
 			"type": "string"

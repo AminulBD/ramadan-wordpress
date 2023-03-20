@@ -6,10 +6,7 @@
 	"category": "ramadan",
 	"icon": "megaphone",
 	"description": "Display monthly ramadan time.",
-	"keywords": [
-		"ramadan",
-		"monthly"
-	],
+	"keywords": [ "ramadan", "monthly" ],
 	"version": "1.0.0",
 	"textdomain": "ramadan",
 	"attributes": {

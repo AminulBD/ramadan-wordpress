@@ -6,11 +6,7 @@
 	"category": "ramadan",
 	"icon": "megaphone",
 	"description": "Display all city as dropdown.",
-	"keywords": [
-		"ramadan",
-		"cities",
-		"city"
-	],
+	"keywords": [ "ramadan", "cities", "city" ],
 	"example": {
 		"attributes": {}
 	},
