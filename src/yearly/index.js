@@ -1,7 +1,12 @@
 import { registerBlockType } from '@wordpress/blocks';
 import ServerSideRender from '@wordpress/server-side-render';
 import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
-import { CheckboxControl, PanelBody, SelectControl, TextControl } from '@wordpress/components';
+import {
+	CheckboxControl,
+	PanelBody,
+	SelectControl,
+	TextControl,
+} from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 import { bangladesh as BDCities } from '../utils/cities';
 import metadata from './block.json';
@@ -83,13 +88,13 @@ function Edit( { attributes, setAttributes } ) {
 						( key, index ) => (
 							<CheckboxControl
 								key={ index }
-								label={ window.ramadan.headings[key] ?? '-' }
-								checked={ attributes.columns?.[key] }
+								label={ window.ramadan.headings[ key ] ?? '-' }
+								checked={ attributes.columns?.[ key ] }
 								onChange={ ( value ) => {
 									setAttributes( {
 										columns: {
 											...attributes.columns,
-											[key]: value,
+											[ key ]: value,
 										},
 									} );
 								} }

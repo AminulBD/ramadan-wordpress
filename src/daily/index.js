@@ -80,13 +80,13 @@ function Edit( { attributes, setAttributes } ) {
 						( key, index ) => (
 							<CheckboxControl
 								key={ index }
-								label={ window.ramadan.headings[key] ?? '-' }
-								checked={ attributes.columns?.[key] }
+								label={ window.ramadan.headings[ key ] ?? '-' }
+								checked={ attributes.columns?.[ key ] }
 								onChange={ ( value ) => {
 									setAttributes( {
 										columns: {
 											...attributes.columns,
-											[key]: value,
+											[ key ]: value,
 										},
 									} );
 								} }
