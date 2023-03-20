@@ -39,7 +39,7 @@ Content variables are the variables that can be used anywhere in the post title 
 - {{day}}: Display the current day. Example: Monday
 - {{month}}: Display the current month. Example: March
 - {{year}}: Display the current year. Example: 2020
-- {{sahri}}: Display the current sahri time. Example: 04:40 AM
+- {{sahri_time}}: Display the current sahri time. Example: 04:40 AM
 - {{fajr_time}}: Display the current fajr time. Example: 04:50 AM
 - {{sunrise_time}}: Display the current sunrise time. Example: 05:30 AM
 - {{dhuhr_time}}: Display the current dhuhr time. Example: 12:30 PM
