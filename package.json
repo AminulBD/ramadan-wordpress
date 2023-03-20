@@ -13,7 +13,7 @@
 		"packages-update": "wp-scripts packages-update",
 		"plugin-zip": "wp-scripts plugin-zip",
 		"start": "wp-scripts start",
-		"i18n": "wp i18n make-pot . languages/bubble.pot --exclude=src"
+		"i18n": "wp i18n make-pot . languages/ramadan.pot --exclude=src"
 	},
 	"devDependencies": {
 		"@wordpress/scripts": "^25.4.0"
