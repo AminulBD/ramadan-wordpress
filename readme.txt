@@ -33,8 +33,8 @@ No. Only the block editor can use this.
 
 Content variables are the variables that can be used anywhere in the post title and content. Currently, we have three content variables:
 
-- {{city}}:  Display the city name current active city name. Example: Dhaka, Chittagong, etc.
-- {{today}}:  Display the current date. Example: 20 March, Monday
+- {{city}}: Display the city name current active city name. Example: Dhaka, Chittagong, etc.
+- {{today}}: Display the current date. Example: 20 March, Monday
 - {{date}}: Display the current date. Example: 20 March, Monday
 - {{day}}: Display the current day. Example: Monday
 - {{month}}: Display the current month. Example: March

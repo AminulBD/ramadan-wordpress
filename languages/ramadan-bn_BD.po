@@ -421,7 +421,7 @@ msgstr "সূর্যোদয়"
 
 #: includes/classes/class-helper.php:149
 msgid "Dhuhr"
-msgstr "দুহর"
+msgstr "যোহর"
 
 #: includes/classes/class-helper.php:150
 msgid "Asr"
