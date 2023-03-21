@@ -2,7 +2,7 @@
 Contributors:      AminulBD
 Tags:              block
 Tested up to:      6.2
-Stable tag:        1.0.3
+Stable tag:        1.0.4
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -64,3 +64,12 @@ Content variables are the variables that can be used anywhere in the post title 
 * Added: Support for the latest WordPress version
 * Added: Ability control columns of any table
 * Added: Content variables for `wp_title`, `the_content`, and `the_title`
+
+= 1.0.4 =
+* fix: correct variables time
+* i18n: added `bn_BD` locale
+* fix: city selector group name display
+* fix: calculate all time
+* fix: textdomain load for i18n
+* changed: template file name was wrong, renamed as project name
+* fix: added `document_title` filter
