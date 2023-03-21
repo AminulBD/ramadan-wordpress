@@ -24,7 +24,7 @@ class Content {
 		$cities       = Helper::get_cities_flatten();
 		$city         = get_query_var( 'ramadan_city', 'dhaka' );
 		$today        = current_datetime()->format( 'Y-m-d' );
-		$city         = isset( $cities[ $city ] ) ? $cities[ $city ] : 'dhaka';
+		$cityName     = isset( $cities[ $city ] ) ? $cities[ $city ] : 'dhaka';
 		$calendar     = new \AminulBD\Ramadan\Prayer_Calendar( $city );
 		$schedule     = $calendar->today( $today );
 		$formats      = get_option( 'ramadan_date_formats' ) ?: [];
@@ -36,7 +36,7 @@ class Content {
 		$time_format  = isset( $formats['time'] ) ? $formats['time'] : 'h:i A';
 
 		$text = [
-			'{{city}}'  => esc_attr( $city ),
+			'{{city}}'  => esc_attr( $cityName ),
 			'{{today}}' => date_i18n( $today_format, strtotime( $today ) ),
 			'{{date}}'  => date_i18n( $date_format, strtotime( $today ) ),
 			'{{day}}'   => date_i18n( $day_format, strtotime( $today ) ),
