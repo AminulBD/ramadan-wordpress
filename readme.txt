@@ -74,5 +74,5 @@ Content variables are the variables that can be used anywhere in the post title 
 * changed: template file name was wrong, renamed as project name
 * fix: added `document_title` filter
 
-= 1.0.1 =
+= 1.0.5 =
 * fix: current page title
