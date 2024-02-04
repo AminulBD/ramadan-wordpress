@@ -2,7 +2,7 @@
 Contributors:      AminulBD
 Tags:              block
 Tested up to:      6.2
-Stable tag:        1.0.4
+Stable tag:        1.0.5
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -73,3 +73,6 @@ Content variables are the variables that can be used anywhere in the post title 
 * fix: textdomain load for i18n
 * changed: template file name was wrong, renamed as project name
 * fix: added `document_title` filter
+
+= 1.0.5 =
+* fix: current page title
