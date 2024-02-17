@@ -1,8 +1,8 @@
 === Ramadan ===
 Contributors:      AminulBD
 Tags:              block
-Tested up to:      6.2
-Stable tag:        1.0.5
+Tested up to:      6.4.3
+Stable tag:        1.0.6
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -76,3 +76,7 @@ Content variables are the variables that can be used anywhere in the post title 
 
 = 1.0.5 =
 * fix: current page title
+
+= 1.0.6 =
+* fix: more filters for title
+* fix: add WordPress SEO Supports
