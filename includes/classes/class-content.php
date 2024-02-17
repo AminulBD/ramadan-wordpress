@@ -10,7 +10,7 @@ class Content {
 		add_filter( 'the_title', [ $this, 'content' ] );
 		add_filter( 'wp_title', [ $this, 'content' ] );
 		add_filter( 'document_title', [ $this, 'content' ] );
-		add_filter( 'pre_get_document_title', [ $this, 'add_city_to_the_page_title' ] );
+		add_filter( 'pre_get_document_title', [ $this, 'add_city_to_the_page_title' ], 99 );
 	}
 
 	public static function init() {
