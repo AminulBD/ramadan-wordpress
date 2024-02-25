@@ -225,6 +225,7 @@ class Prayer_Calendar {
 			'02-26' => [ 'sahri' => '05:04', 'fajr' => '05:09', 'sunrise' => '06:23', 'dhuhr' => '12:15', 'asr' => '16:21', 'sunset' => '18:03', 'iftar' => '18:03', 'maghrib' => '18:03', 'isha' => '19:16' ],
 			'02-27' => [ 'sahri' => '05:03', 'fajr' => '05:09', 'sunrise' => '06:22', 'dhuhr' => '12:15', 'asr' => '16:21', 'sunset' => '18:03', 'iftar' => '18:03', 'maghrib' => '18:03', 'isha' => '19:16' ],
 			'02-28' => [ 'sahri' => '05:02', 'fajr' => '05:08', 'sunrise' => '06:22', 'dhuhr' => '12:15', 'asr' => '16:22', 'sunset' => '18:04', 'iftar' => '18:04', 'maghrib' => '18:04', 'isha' => '19:16' ],
+			'02-29' => [ 'sahri' => '05:02', 'fajr' => '05:08', 'sunrise' => '06:22', 'dhuhr' => '12:15', 'asr' => '16:22', 'sunset' => '18:04', 'iftar' => '18:04', 'maghrib' => '18:04', 'isha' => '19:16' ],
 		];
 
 		return $this->adjust_time( $data );
