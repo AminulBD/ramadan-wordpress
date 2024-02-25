@@ -3,7 +3,7 @@
  * Plugin Name: Ramadan
  * Plugin URI: https://aminul.net/wordpress-plugins/ramadan
  * Description: Display ramadan and prayer time in your website.
- * Version: 1.0.6
+ * Version: 1.0.7
  * Author: Aminul Islam
  * Author URI: https://aminul.net/
  * License: GPLv2
@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'RAMADAN_VERSION', '1.0.6' );
+define( 'RAMADAN_VERSION', '1.0.7' );
 define( 'RAMADAN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'RAMADAN_URL', plugin_dir_url( __FILE__ ) );
 

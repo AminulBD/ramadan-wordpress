@@ -2,7 +2,7 @@
 Contributors:      AminulBD
 Tags:              block
 Tested up to:      6.4.3
-Stable tag:        1.0.6
+Stable tag:        1.0.7
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -79,4 +79,8 @@ Content variables are the variables that can be used anywhere in the post title 
 
 = 1.0.6 =
 * fix: more filters for title
-* fix: add WordPress SEO Supports
+* fix: add Yoast SEO support
+
+= 1.0.7 =
+* fix: leap year
+* add: Yoast SEO sitemap support

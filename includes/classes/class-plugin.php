@@ -16,6 +16,7 @@ class Plugin {
 		Assets::init();
 		Blocks::init();
 		Content::init();
+		Sitemap::init();
 	}
 
 	public static function init() {
