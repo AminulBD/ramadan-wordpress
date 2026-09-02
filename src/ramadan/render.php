@@ -16,12 +16,20 @@ $dayformat          = empty( $attributes['dayformat'] ) ? 'D' : $attributes['day
 $columns            = empty( $attributes['columns'] ) ? [] : $attributes['columns'];
 $date               = isset( $attributes['date'] ) ? $attributes['date'] : '';
 $date               = empty( $date ) ? get_option( 'ramadan_start_date' ) : $date;
-$year               = ( new \DateTime( $date ) )->format( 'Y' );
+$date               = empty( $date ) ? current_datetime()->format( 'Y-m-d' ) : $date;
 $today              = current_datetime()->format( 'Y-m-d' );
 $calendar           = new \AminulBD\Ramadan\Prayer_Calendar( $city );
-$schedules          = $calendar->ramadan( $date );
+$schedules          = [];
 $count              = 0;
 $headings           = \AminulBD\Ramadan\Helper::get_headings();
+
+try {
+	$year      = ( new \DateTime( $date ) )->format( 'Y' );
+	$schedules = $calendar->ramadan( $date );
+} catch ( \Exception $e ) {
+	$year = current_datetime()->format( 'Y' );
+}
+
 $headings           = array_filter( $headings, function ( $key ) use ( $columns ) {
 	return isset( $columns[ $key ] ) && ( $columns[ $key ] === true || $columns[ $key ] === 'true' );
 }, ARRAY_FILTER_USE_KEY );
@@ -30,7 +38,7 @@ $headings           = array_filter( $headings, function ( $key ) use ( $columns 
 	<table class="prayer-times-table prayer-times-table-ramadan">
 		<thead>
 		<tr>
-			<th><?php echo esc_html( 'Ramadan' ); ?></th>
+			<th><?php echo esc_html__( 'Ramadan', 'ramadan' ); ?></th>
 			<?php foreach ( $headings as $heading ) : ?>
 				<th><?php echo esc_html( $heading ); ?></th>
 			<?php endforeach; ?>

@@ -6,8 +6,10 @@
  */
 
 $month = get_query_var( 'ramadan_month' );
+
 if ( empty( $month ) ) {
-	$month = strtolower( current_datetime()->format( 'F' ) );
+	$month_keys = array_keys( \AminulBD\Ramadan\Helper::get_months() );
+	$month      = $month_keys[ (int) current_datetime()->format( 'n' ) - 1 ];
 }
 ?>
 

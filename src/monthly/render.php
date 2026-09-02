@@ -13,10 +13,16 @@ $dayformat  = empty( $attributes['dayformat'] ) ? 'D' : $attributes['dayformat']
 $year       = isset( $attributes['year'] ) ? $attributes['year'] : '';
 $year       = empty( $year ) ? current_datetime()->format( 'Y' ) : $year;
 $month      = isset( $attributes['month'] ) ? $attributes['month'] : get_query_var( 'ramadan_month' );
-$month      = empty( $month ) ? current_datetime()->format( 'F' ) : $month;
-$columns    = empty( $attributes['columns'] ) ? [] : $attributes['columns'];
+$month_keys = array_keys( \AminulBD\Ramadan\Helper::get_months() );
+$month      = empty( $month ) ? $month_keys[ (int) current_datetime()->format( 'n' ) - 1 ] : strtolower( $month );
 $calendar   = new \AminulBD\Ramadan\Prayer_Calendar( $city );
-$schedules  = $calendar->{strtolower( $month )}();
+
+if ( ! method_exists( $calendar, $month ) ) {
+	$month = $month_keys[ (int) current_datetime()->format( 'n' ) - 1 ];
+}
+
+$columns    = empty( $attributes['columns'] ) ? [] : $attributes['columns'];
+$schedules  = $calendar->$month();
 $today      = current_datetime()->format( 'Y-m-d' );
 $headings   = \AminulBD\Ramadan\Helper::get_headings();
 $headings   = array_filter( $headings, function ( $key ) use ( $columns ) {

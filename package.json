@@ -1,6 +1,6 @@
 {
 	"name": "ramadan",
-	"version": "1.0.7",
+	"version": "1.1.0",
 	"description": "Display Ramadan schedule.",
 	"author": "The WordPress Contributors",
 	"license": "GPL-2.0-or-later",
@@ -15,7 +15,17 @@
 		"start": "wp-scripts start",
 		"i18n": "wp i18n make-pot . languages/ramadan.pot --exclude=src"
 	},
+	"engines": {
+		"node": ">=20"
+	},
 	"devDependencies": {
-		"@wordpress/scripts": "^25.4.0"
+		"@wordpress/scripts": "^34.2.0"
+	},
+	"dependencies": {
+		"@wordpress/block-editor": "^17.0.0",
+		"@wordpress/blocks": "^15.27.0",
+		"@wordpress/components": "^40.0.0",
+		"@wordpress/i18n": "^6.27.0",
+		"@wordpress/server-side-render": "^6.30.0"
 	}
 }

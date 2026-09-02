@@ -56,8 +56,17 @@ class Content {
 		];
 
 		$times = [ 'sahri', 'fajr', 'sunrise', 'dhuhr', 'asr', 'maghrib', 'iftar', 'sunset', 'isha' ];
-		foreach ( $times as $name ) {
-			$text["{{{$name}_time}}"] = date_i18n( $time_format, strtotime( "$today $schedule[$name]" ) );
+
+		if ( ! empty( $schedule ) ) {
+			foreach ( $times as $name ) {
+				$text["{{{$name}_time}}"] = isset( $schedule[ $name ] )
+					? date_i18n( $time_format, strtotime( "$today {$schedule[ $name ]}" ) )
+					: '';
+			}
+		} else {
+			foreach ( $times as $name ) {
+				$text["{{{$name}_time}}"] = '';
+			}
 		}
 
 		return str_ireplace( array_keys( $text ), $text, $content );

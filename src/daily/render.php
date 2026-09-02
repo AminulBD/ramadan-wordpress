@@ -38,12 +38,13 @@ $headings   = array_filter( $headings, function ( $key ) use ( $columns ) {
 					<td><?php echo date_i18n( $dateformat, strtotime( $date ) ); ?></td>
 				<?php elseif ( $column === 'day' ) : ?>
 					<td><?php echo date_i18n( $dayformat, strtotime( $date ) ); ?></td>
+				<?php elseif ( isset( $schedule[ $column ] ) ) : ?>
+					<td><?php echo date_i18n( $timeformat, strtotime( "$date {$schedule[ $column ]}" ) ); ?></td>
 				<?php else: ?>
-					<td><?php echo date_i18n( $timeformat, strtotime( "$date $schedule[$column]" ) ); ?></td>
+					<td>-</td>
 				<?php endif; ?>
 			<?php endforeach; ?>
 		</tr>
-		<tr>
 		</tbody>
 	</table>
 </div>

@@ -1,12 +1,12 @@
 .ramadan-block-container .prayer-times-table {
 	border: 1px solid #ddd;
 	border-spacing: inherit;
-	background: #FFFFFF;
+	background: #fff;
 }
 
 .ramadan-block-container .prayer-times-table td,
 .ramadan-block-container .prayer-times-table th {
-	line-height: 1.4em;
+	line-height: 1.4;
 	font-size: 1em;
 	text-align: center;
 	padding: 5px 10px;
@@ -26,7 +26,7 @@
 
 .ramadan-block-container .prayer-times-table > tbody > tr.today > td {
 	background-color: #266b28;
-	color: #ffffff;
+	color: #fff;
 }
 
 .ramadan-block-container .prayer-times-table > tbody > tr.group-caption > td {
