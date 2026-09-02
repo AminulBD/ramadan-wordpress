@@ -20,7 +20,8 @@ class Blocks {
 
 	public function register_blocks() {
 		$blocks = glob( RAMADAN_PATH . 'build/*', GLOB_ONLYDIR );
-		foreach ( $blocks as $block ) {
+
+		foreach ( (array) $blocks as $block ) {
 			register_block_type( $block );
 		}
 

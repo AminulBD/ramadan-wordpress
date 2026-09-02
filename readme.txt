@@ -1,8 +1,10 @@
 === Ramadan ===
 Contributors:      AminulBD
 Tags:              block
-Tested up to:      6.4.3
-Stable tag:        1.0.7
+Tested up to:      7.1
+Requires at least: 6.3
+Requires PHP:      7.4
+Stable tag:        1.1.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -84,3 +86,12 @@ Content variables are the variables that can be used anywhere in the post title 
 = 1.0.7 =
 * fix: leap year
 * add: Yoast SEO sitemap support
+
+= 1.1.0 =
+* update: compatibility with WordPress 7.1 (iframed block editor)
+* update: migrate all blocks to Block API version 3
+* update: build toolchain to @wordpress/scripts 34
+* fix: fatal error on PHP 8 when Ramadan start date is empty
+* fix: fatal error on non-English locales for current month detection
+* fix: guard against null prayer schedule in content variables
+* fix: remove missing stylesheet reference from Month Links block

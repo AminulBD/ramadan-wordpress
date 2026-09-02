@@ -1,6 +1,6 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
-	"apiVersion": 2,
+	"apiVersion": 3,
 	"name": "ramadan/ramadan",
 	"title": "Ramadan Time",
 	"category": "ramadan",
@@ -58,9 +58,9 @@
 			"dateformat": "d M",
 			"timeformat": "h:i A",
 			"dayformat": "D",
-			"first_phase_title ": "10 Days: Mercy of Allah",
+			"first_phase_title": "10 Days: Mercy of Allah",
 			"second_phase_title": "10 Days: Forgiveness of Allah",
-			"third_phase_title ": "10 Days: Safety from the Hellfire",
+			"third_phase_title": "10 Days: Safety from the Hellfire",
 			"columns": {
 				"date": true,
 				"day": true,
