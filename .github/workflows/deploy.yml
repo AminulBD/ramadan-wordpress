@@ -57,13 +57,10 @@ jobs:
           SVN_PASSWORD: ${{ secrets.WP_SVN_PASSWORD }}
 
       - name: Build distribution zip
-        run: npm run plugin-zip
-
-      - name: Checksums
-        if: startsWith(github.ref, 'refs/tags/')
         run: |
-          rm -f SHA256SUMS
-          sha256sum ramadan.zip > SHA256SUMS
+          npm run plugin-zip
+          version=$(sed -n 's/^ \* Version: \(.*\)$/\1/p' ramadan.php | head -1)
+          mv ramadan.zip "ramadan.${version}.zip"
 
       # Idempotent, so a re-run or a re-pushed tag refreshes the assets of
       # the existing release instead of failing on "release already exists".
@@ -77,4 +74,4 @@ jobs:
           else
             gh release create "$GITHUB_REF_NAME" --generate-notes --verify-tag
           fi
-          gh release upload "$GITHUB_REF_NAME" ramadan.zip SHA256SUMS --clobber
+          gh release upload "$GITHUB_REF_NAME" ramadan.*.zip --clobber
