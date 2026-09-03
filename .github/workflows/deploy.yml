@@ -19,17 +19,8 @@ jobs:
           node-version: '20'
           cache: npm
 
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '7.4'
-          tools: wp-cli
-
       - name: Install dependencies
         run: npm ci
-
-      - name: Generate POT file
-        run: npm run i18n
 
       - name: Build
         run: npm run build
