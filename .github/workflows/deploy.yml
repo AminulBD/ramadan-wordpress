@@ -2,8 +2,18 @@ name: Deploy to WordPress.org
 
 on:
   push:
-    tags:
-      - '*'
+    tags: ['*']
+  # Lets you exercise the build without cutting a release.
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Re-pushing a tag supersedes the run already going for it, rather than
+# racing it to publish the same release.
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   deploy:
@@ -12,6 +22,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      # A mismatch ships a release named for the tag around a plugin that
+      # reports the older version. Fail here rather than warn: nobody reads
+      # a warning in a green run, and the fix (bump ramadan.php, move the
+      # tag) is only cheap before publishing.
+      - name: Check the tag matches the plugin version
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          version=$(sed -n 's/^ \* Version: \(.*\)$/\1/p' ramadan.php | head -1)
+          if [ "$GITHUB_REF_NAME" != "$version" ]; then
+            echo "::error::tag ${GITHUB_REF_NAME} does not match ramadan.php version ${version}."
+            exit 1
+          fi
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -26,8 +49,29 @@ jobs:
         run: npm run build
 
       - name: WordPress Plugin Deploy
+        if: startsWith(github.ref, 'refs/tags/')
         uses: 10up/action-wordpress-plugin-deploy@stable
         env:
           SLUG: ramadan
           SVN_USERNAME: ${{ secrets.WP_SVN_USERNAME }}
           SVN_PASSWORD: ${{ secrets.WP_SVN_PASSWORD }}
+
+      - name: Build distribution zip
+        run: |
+          npm run plugin-zip
+          version=$(sed -n 's/^ \* Version: \(.*\)$/\1/p' ramadan.php | head -1)
+          mv ramadan.zip "ramadan.${version}.zip"
+
+      # Idempotent, so a re-run or a re-pushed tag refreshes the assets of
+      # the existing release instead of failing on "release already exists".
+      - name: Publish
+        if: startsWith(github.ref, 'refs/tags/')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            echo "updating the existing $GITHUB_REF_NAME release"
+          else
+            gh release create "$GITHUB_REF_NAME" --generate-notes --verify-tag
+          fi
+          gh release upload "$GITHUB_REF_NAME" ramadan.*.zip --clobber
