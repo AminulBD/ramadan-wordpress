@@ -1,0 +1,92 @@
+name: ramadan-dev
+
+services:
+  db:
+    image: mariadb:11
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_DATABASE: ${DB_NAME:-ramadan}
+      MARIADB_USER: ${DB_USER:-ramadan}
+      MARIADB_PASSWORD: ${DB_PASSWORD:-ramadan}
+    volumes:
+      - db_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+
+  wordpress:
+    image: wordpress:php8.3
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "${WP_PORT:-9080}:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: ${DB_USER:-ramadan}
+      WORDPRESS_DB_PASSWORD: ${DB_PASSWORD:-ramadan}
+      WORDPRESS_DB_NAME: ${DB_NAME:-ramadan}
+      WORDPRESS_DEBUG: 1
+      WORDPRESS_CONFIG_EXTRA: |
+        define( 'WP_DEBUG', true );
+        define( 'WP_DEBUG_LOG', true );
+        define( 'WP_DEBUG_DISPLAY', false );
+        define( 'SCRIPT_DEBUG', true );
+    volumes:
+      - wp_core:/var/www/html
+      - ./ramadan.php:/var/www/html/wp-content/plugins/ramadan/ramadan.php
+      - ./includes:/var/www/html/wp-content/plugins/ramadan/includes
+      - ./build:/var/www/html/wp-content/plugins/ramadan/build
+      - ./languages:/var/www/html/wp-content/plugins/ramadan/languages
+    healthcheck:
+      test: ["CMD", "curl", "-sf", "http://localhost/"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 30s
+
+  wpcli:
+    profiles: ["cli"]
+    image: wordpress:cli-php8.3
+    depends_on:
+      db:
+        condition: service_healthy
+    user: "33:33"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: ${DB_USER:-ramadan}
+      WORDPRESS_DB_PASSWORD: ${DB_PASSWORD:-ramadan}
+      WORDPRESS_DB_NAME: ${DB_NAME:-ramadan}
+    volumes:
+      - wp_core:/var/www/html
+      - ./ramadan.php:/var/www/html/wp-content/plugins/ramadan/ramadan.php
+      - ./includes:/var/www/html/wp-content/plugins/ramadan/includes
+      - ./build:/var/www/html/wp-content/plugins/ramadan/build
+      - ./languages:/var/www/html/wp-content/plugins/ramadan/languages
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "${PMA_PORT:-9081}:80"
+    environment:
+      PMA_HOST: db
+      PMA_USER: ${DB_USER:-ramadan}
+      PMA_PASSWORD: ${DB_PASSWORD:-ramadan}
+
+  assets:
+    image: node:24-alpine
+    working_dir: /app
+    volumes:
+      - .:/app
+      - assets_node_modules:/app/node_modules
+    command: sh -c "npm install && npm run start"
+
+volumes:
+  db_data:
+  wp_core:
+  assets_node_modules:

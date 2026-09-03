@@ -2,10 +2,12 @@
 /.github
 /node_modules
 /src
+/bin
 
 .distignore
 .editorconfig
 .gitignore
+docker-compose.yml
 package.json
 package-lock.json
 
