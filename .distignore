@@ -1,0 +1,13 @@
+/.git
+/.github
+/node_modules
+/src
+
+.distignore
+.editorconfig
+.gitignore
+package.json
+package-lock.json
+
+*.zip
+*.tgz
