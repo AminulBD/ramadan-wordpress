@@ -16,7 +16,7 @@
 		"i18n": "wp i18n make-pot . languages/ramadan.pot --exclude=src"
 	},
 	"engines": {
-		"node": ">=20"
+		"node": ">=24"
 	},
 	"overrides": {
 		"@puppeteer/browsers": "^3.2.1",
