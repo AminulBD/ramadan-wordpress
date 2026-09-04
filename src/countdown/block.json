@@ -1,0 +1,43 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ramadan/countdown",
+	"title": "Salat Time Countdown",
+	"category": "ramadan",
+	"icon": "clock",
+	"description": "Display an interactive countdown to the next salat time.",
+	"keywords": [ "ramadan", "salat", "countdown", "prayer", "iftar" ],
+	"version": "1.0.0",
+	"textdomain": "ramadan",
+	"attributes": {
+		"city": {
+			"type": "string"
+		},
+		"timeformat": {
+			"type": "string",
+			"default": "h:i A"
+		},
+		"events": {
+			"type": "object",
+			"default": {
+				"sahri": true,
+				"fajr": true,
+				"sunrise": true,
+				"dhuhr": true,
+				"asr": true,
+				"iftar": true,
+				"maghrib": true,
+				"isha": true
+			}
+		}
+	},
+	"example": {
+		"attributes": {
+			"city": "dhaka",
+			"timeformat": "h:i A"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"viewScript": "file:./view.js",
+	"render": "file:./render.php"
+}

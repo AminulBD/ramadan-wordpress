@@ -64,3 +64,178 @@
 	border-color: #2196f3;
 	box-shadow: 2px 2px 4px -1px #2196f3;
 }
+
+.ramadan-block-container .ramadan-countdown {
+	background: #0a1b30;
+	border: 1px solid rgba(212, 175, 55, 0.4);
+	border-radius: 12px;
+	overflow: hidden;
+	text-align: center;
+	color: #f5f0e1;
+}
+
+.ramadan-block-container .ramadan-countdown__scene {
+	position: relative;
+	padding: 20px 24px 0;
+	background:
+		url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='84' height='84' viewBox='0 0 84 84'><g fill='none' stroke='%23d4af37' stroke-opacity='.08'><polygon points='42,20 45.5,33.5 58,26 50.5,38.5 64,42 50.5,45.5 58,58 45.5,50.5 42,64 38.5,50.5 26,58 33.5,45.5 20,42 33.5,38.5 26,26 38.5,33.5'/><circle cx='0' cy='0' r='9'/><circle cx='84' cy='0' r='9'/><circle cx='0' cy='84' r='9'/><circle cx='84' cy='84' r='9'/></g></svg>") repeat,
+		linear-gradient(180deg, #1b3a5f 0%, #10283f 55%, #0a1b30 100%);
+}
+
+.ramadan-block-container .ramadan-countdown__astro {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+.ramadan-block-container .ramadan-countdown__header {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 10px;
+	font-size: 0.85em;
+	letter-spacing: 0.04em;
+	color: rgba(245, 240, 225, 0.72);
+}
+
+.ramadan-block-container .ramadan-countdown__city {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.ramadan-block-container .ramadan-countdown__city svg {
+	width: 13px;
+	height: 13px;
+	flex: none;
+}
+
+.ramadan-block-container .ramadan-countdown__clock {
+	font-variant-numeric: tabular-nums;
+	color: #f0c75e;
+}
+
+.ramadan-block-container .ramadan-countdown__main {
+	position: relative;
+	z-index: 1;
+	padding: clamp(18px, 4vw, 34px) 0 10px;
+}
+
+.ramadan-block-container .ramadan-countdown__label {
+	margin: 0 0 8px;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 1.05em;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: #d4af37;
+}
+
+.ramadan-block-container .ramadan-countdown__timer {
+	margin: 0;
+	font-size: clamp(2.6rem, 8vw, 4.4rem);
+	font-weight: 700;
+	line-height: 1.1;
+	font-variant-numeric: tabular-nums;
+	letter-spacing: 0.04em;
+	color: #f6d67c;
+	text-shadow: 0 0 26px rgba(240, 199, 94, 0.45), 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.ramadan-block-container .ramadan-countdown__progress {
+	position: relative;
+	width: min(420px, 82%);
+	height: 8px;
+	margin: 20px auto 6px;
+	background: rgba(212, 175, 55, 0.18);
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.ramadan-block-container .ramadan-countdown__progress > span {
+	display: block;
+	height: 100%;
+	background: linear-gradient(90deg, #a9852e, #f0c75e);
+	border-radius: 4px;
+	box-shadow: 0 0 12px rgba(240, 199, 94, 0.55);
+	transition: width 1s linear;
+}
+
+.ramadan-block-container .ramadan-countdown__skyline {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-top: -6px;
+}
+
+.ramadan-block-container .ramadan-countdown__panel {
+	padding: 16px 18px 22px;
+	background: #081525;
+	border-top: 1px solid rgba(212, 175, 55, 0.25);
+}
+
+.ramadan-block-container .ramadan-countdown__ornament {
+	display: block;
+	width: 240px;
+	max-width: 70%;
+	height: auto;
+	margin: 0 auto 14px;
+	opacity: 0.9;
+}
+
+.ramadan-block-container .ramadan-countdown__events {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ramadan-block-container .ramadan-countdown__event {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+	min-width: 82px;
+	padding: 12px 12px 10px;
+	background: rgba(240, 199, 94, 0.05);
+	border: 1px solid rgba(212, 175, 55, 0.35);
+	border-radius: 999px 999px 8px 8px;
+	transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.ramadan-block-container .ramadan-countdown__event-name {
+	font-size: 0.72em;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: #d4af37;
+}
+
+.ramadan-block-container .ramadan-countdown__event-time {
+	font-weight: 600;
+	font-variant-numeric: tabular-nums;
+	color: #f5f0e1;
+}
+
+.ramadan-block-container .ramadan-countdown__event.is-past {
+	opacity: 0.4;
+}
+
+.ramadan-block-container .ramadan-countdown__event.is-next {
+	background: linear-gradient(180deg, #f6d67c, #d4af37);
+	border-color: #f6d67c;
+	box-shadow: 0 0 18px rgba(240, 199, 94, 0.45);
+}
+
+.ramadan-block-container .ramadan-countdown__event.is-next .ramadan-countdown__event-name {
+	color: #1d2b1a;
+}
+
+.ramadan-block-container .ramadan-countdown__event.is-next .ramadan-countdown__event-time {
+	color: #14202e;
+}

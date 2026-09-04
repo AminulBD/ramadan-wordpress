@@ -40,6 +40,7 @@ services:
       - ./includes:/var/www/html/wp-content/plugins/ramadan/includes
       - ./build:/var/www/html/wp-content/plugins/ramadan/build
       - ./languages:/var/www/html/wp-content/plugins/ramadan/languages
+      - ./public:/var/www/html/wp-content/plugins/ramadan/public
     healthcheck:
       test: ["CMD", "curl", "-sf", "http://localhost/"]
       interval: 10s
@@ -65,6 +66,7 @@ services:
       - ./includes:/var/www/html/wp-content/plugins/ramadan/includes
       - ./build:/var/www/html/wp-content/plugins/ramadan/build
       - ./languages:/var/www/html/wp-content/plugins/ramadan/languages
+      - ./public:/var/www/html/wp-content/plugins/ramadan/public
 
   phpmyadmin:
     image: phpmyadmin:latest
