@@ -4,7 +4,7 @@ Tags:              block
 Tested up to:      7.1
 Requires at least: 6.3
 Requires PHP:      7.4
-Stable tag:        1.1.0
+Stable tag:        1.2.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -95,3 +95,8 @@ Content variables are the variables that can be used anywhere in the post title 
 * fix: fatal error on non-English locales for current month detection
 * fix: guard against null prayer schedule in content variables
 * fix: remove missing stylesheet reference from Month Links block
+
+= 1.2.0 =
+* Added: interactive Salat Time Countdown block with live countdown, ticking clock, and progress bar
+* Added: Islamic-themed design with mosque skyline, crescent moon, star lattice, and gold-on-navy palette
+* Added: per-event toggles, city selection, and time format controls for the countdown block
