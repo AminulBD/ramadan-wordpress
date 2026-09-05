@@ -53,6 +53,7 @@ jobs:
         uses: 10up/action-wordpress-plugin-deploy@stable
         env:
           SLUG: ramadan
+          ASSETS_DIR: assets
           SVN_USERNAME: ${{ secrets.WP_SVN_USERNAME }}
           SVN_PASSWORD: ${{ secrets.WP_SVN_PASSWORD }}
 

@@ -51,6 +51,16 @@ Content variables are the variables that can be used anywhere in the post title 
 - {{sunset_time}}: Display the current sunset time. Example: 06:10 PM
 - {{isha_time}}: Display the current isha time. Example: 07:50 PM
 
+== Screenshots ==
+
+1. Ramadan schedule block
+2. Daily Ramadan time block
+3. Monthly prayer times block
+4. Yearly prayer times block
+5. Month links block
+6. City selector block
+7. Ramadan countdown block with mosque skyline and live countdown
+
 == Changelog ==
 
 = 1.0.0 =
